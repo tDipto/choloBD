@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,11 +21,11 @@ const Navbar = () => {
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto text-light">
-          <li class="nav-item">
+          <NavLink to="/" class="nav-item">
             <a class="nav-link" href="#">
               হোম
             </a>
-          </li>
+          </NavLink>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -38,34 +39,53 @@ const Navbar = () => {
               বিভাগ
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
-                ঢাকা
-              </a>
-              <a class="dropdown-item" href="#">
-                খুলনা
-              </a>
+              <NavLink to="/dhaka" end>
+                <a class="dropdown-item" href="#">
+                  ঢাকা
+                </a>
+              </NavLink>
 
-              <a class="dropdown-item" href="#">
-                বরিশাল
-              </a>
-              <a class="dropdown-item" href="#">
-                চট্টগ্রাম
-              </a>
-              <a class="dropdown-item" href="#">
-                রাজশাহী
-              </a>
-              <a class="dropdown-item" href="#">
-                সিলেট
-              </a>
-              <a class="dropdown-item" href="#">
-                রংপুর
-              </a>
-              <a class="dropdown-item" href="#">
-                ময়মনসিংহ
-              </a>
-              <a class="dropdown-item" href="#">
-                বরিশাল
-              </a>
+              <NavLink to="/khulna" end>
+                <a class="dropdown-item" href="#">
+                  খুলনা
+                </a>
+              </NavLink>
+
+              <NavLink to="/barisal" end>
+                <a class="dropdown-item" href="#">
+                  বরিশাল
+                </a>
+              </NavLink>
+
+              <NavLink to="/chittagong" end>
+                <a class="dropdown-item" href="#">
+                  চট্টগ্রাম
+                </a>
+              </NavLink>
+
+              <NavLink to="/rajshahi" end>
+                <a class="dropdown-item" href="#">
+                  রাজশাহী
+                </a>
+              </NavLink>
+
+              <NavLink to="/sylhet" end>
+                <a class="dropdown-item" href="#">
+                  সিলেট
+                </a>
+              </NavLink>
+
+              <NavLink to="/rangpur" end>
+                <a class="dropdown-item" href="#">
+                  রংপুর
+                </a>
+              </NavLink>
+
+              <NavLink to="/mymanshingh" end>
+                <a class="dropdown-item" href="#">
+                  ময়মনসিংহ
+                </a>
+              </NavLink>
             </div>
           </li>
         </ul>
