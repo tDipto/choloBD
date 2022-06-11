@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "divName": "dhaka",
+    "disName": "ঢাকা",
+    "discription": "ঢাকা বঙ্গালদেশসী",
+    "districts": [
+      { "id": 101, "distName": "savar", "distDName": "সাভার" },
+      { "id": 102, "distName": "gazipur", "distDName": "গাযিপুর" },
+      { "id": 103, "distName": "tangailr", "distDName": "তাঙ্গাইল" },
+      { "id": 104, "distName": "foridpur", "distDName": "ফরিদপুর" },
+      { "id": 105, "distName": "borguna", "distDName": "বরগুনা" }
+    ]
+  },
+  {
+    "id": 2,
+    "divName": "khulna",
+    "disName": "খুলনা",
+    "discription": "ঢাকা বঙ্গালদেশসী",
+    "districts": [
+      { "id": 201, "distName": "sasvar", "distDName": "সাভার" },
+      { "id": 202, "distName": "gazipur", "distDName": "গাযিপুর" },
+      { "id": 203, "distName": "tangailr", "distDName": "তাঙ্গাইল" },
+      { "id": 204, "distName": "foridpur", "distDName": "ফরিদপুর" },
+      { "id": 205, "distName": "borguna", "distDName": "বরগুনা" }
+    ]
+  },
+  {
+    "id": 3,
+    "divName": "barisal",
+    "disName": "বরিশাল",
+    "discription": "ঢাকা বঙ্গালদেশসী",
+    "districts": [
+      { "id": 301, "distName": "sdsd", "distDName": "ক্কক" },
+      { "id": 3102, "distName": "asdr", "distDName": "দসদর" },
+      { "id": 303, "distName": "tdsr", "distDName": "তাসদ্দসল" },
+      { "id": 304, "distName": "foasddpur", "distDName": "ফাসদপুর" },
+      { "id": 3105, "distName": "borguna", "distDName": "বরসাদনা" }
+    ]
+  },
+  {
+    "id": 4,
+    "divName": "sylhet",
+    "disName": "সিলেট",
+    "discription": "ঢাকা বঙ্গালদেশসী",
+    "districts": [
+      { "id": 401, "distName": "sasvar", "distDName": "সাভার" },
+      { "id": 402, "distName": "gazipur", "distDName": "গাযিপুর" },
+      { "id": 403, "distName": "tangailr", "distDName": "তাঙ্গাইল" },
+      { "id": 404, "distName": "foridpur", "distDName": "ফরিদপুর" },
+      { "id": 405, "distName": "borguna", "distDName": "বরগুনা" }
+    ]
+  }
+]

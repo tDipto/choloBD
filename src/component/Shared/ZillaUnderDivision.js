@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const ZillaUnderDivision = ({ nameinfo }) => {
   return (
@@ -10,7 +10,14 @@ const ZillaUnderDivision = ({ nameinfo }) => {
           /* gridTemplateRows: "repeat(3, 100px)", */
         }}
       >
-        <div class="bg-info m-2 p-1 text-center">{nameinfo.name}</div>;
+        {nameinfo.map((pd) => {
+          /*  console.log(pd); */
+          return (
+            <Link to={pd.distName}>
+              <div class="bg-info m-2 p-1 text-center">{pd.distDName}</div>;
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

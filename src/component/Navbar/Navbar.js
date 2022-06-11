@@ -1,12 +1,11 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import divisons from "../../assets/Division.json";
 
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse position-sticky fixed-top">
-      <a class="navbar-brand" href="#">
-        <p class="text-success">চলো ঘুরি বাংলাদেশ</p>
-      </a>
+      <p class="text-success">চলো ঘুরি বাংলাদেশ</p>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -39,7 +38,16 @@ const Navbar = () => {
               বিভাগ
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <NavLink to="/dhaka" end>
+              {divisons.map((pd) => {
+                return (
+                  <NavLink to={`/${pd.divName}`} end>
+                    <a class="dropdown-item" href="#">
+                      {pd.disName}
+                    </a>
+                  </NavLink>
+                );
+              })}
+              {/* <NavLink to="/dhaka" end>
                 <a class="dropdown-item" href="#">
                   ঢাকা
                 </a>
@@ -85,7 +93,7 @@ const Navbar = () => {
                 <a class="dropdown-item" href="#">
                   ময়মনসিংহ
                 </a>
-              </NavLink>
+              </NavLink> */}
             </div>
           </li>
         </ul>
