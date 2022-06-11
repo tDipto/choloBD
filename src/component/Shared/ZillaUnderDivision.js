@@ -6,15 +6,19 @@ const ZillaUnderDivision = ({ nameinfo }) => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(8, 1fr)",
-          /* gridTemplateRows: "repeat(3, 100px)", */
+          gridTemplateColumns: "repeat(12, 1fr)",
+          width: "auto",
+          height: "auto",
+          margin: "10px",
+          padding: "10px",
+        
         }}
       >
         {nameinfo.map((pd) => {
           /*  console.log(pd); */
           return (
             <Link to={pd.distName}>
-              <div class="bg-info m-2 p-1 text-center">{pd.distDName}</div>;
+              <div class="bg-dark m-3 p-2 text-center text-white rounded">{pd.distDName}</div>
             </Link>
           );
         })}

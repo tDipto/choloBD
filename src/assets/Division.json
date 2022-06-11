@@ -5,50 +5,114 @@
     "disName": "ঢাকা",
     "discription": "ঢাকা বঙ্গালদেশসী",
     "districts": [
-      { "id": 101, "distName": "savar", "distDName": "সাভার" },
-      { "id": 102, "distName": "gazipur", "distDName": "গাযিপুর" },
-      { "id": 103, "distName": "tangailr", "distDName": "তাঙ্গাইল" },
-      { "id": 104, "distName": "foridpur", "distDName": "ফরিদপুর" },
-      { "id": 105, "distName": "borguna", "distDName": "বরগুনা" }
+      { "id": 101, "distName": "kishoreganj", "distDName": "কিশোরগঞ্জ" },
+      { "id": 102, "distName": "gazipur", "distDName": "গাজীপুর" },
+      { "id": 103, "distName": "tangail", "distDName": "টাঙ্গাইল" },
+      { "id": 104, "distName": "kishoreganj", "distDName": "ফরিদপুর" },
+      { "id": 105, "distName": "narayanganj", "distDName": "নারায়ণগঞ্জ" },
+      { "id": 106, "distName": "narsingdi", "distDName": "নরসিংদী" },
+      { "id": 107, "distName": "munshiganj", "distDName": "মুন্সীগঞ্জ" },
+      { "id": 108, "distName": "madaripur", "distDName": "মাদারীপুর" },
+      { "id": 109, "distName": "dhaka", "distDName": "ঢাকা" }
     ]
   },
   {
     "id": 2,
     "divName": "khulna",
     "disName": "খুলনা",
-    "discription": "ঢাকা বঙ্গালদেশসী",
+    "discription": "খুলনা বঙ্গালদেশসী",
     "districts": [
-      { "id": 201, "distName": "sasvar", "distDName": "সাভার" },
-      { "id": 202, "distName": "gazipur", "distDName": "গাযিপুর" },
-      { "id": 203, "distName": "tangailr", "distDName": "তাঙ্গাইল" },
-      { "id": 204, "distName": "foridpur", "distDName": "ফরিদপুর" },
-      { "id": 205, "distName": "borguna", "distDName": "বরগুনা" }
+      { "id": 201, "distName": "kushtia", "distDName": "কুষ্টিয়া" },
+      { "id": 202, "distName": "Chuadanga", "distDName": "চুয়াডাঙ্গা" },
+      { "id": 203, "distName": "Jashore", "distDName": "যশোর" },
+      { "id": 204, "distName": "satkhira", "distDName": "সাতক্ষীরা" },
+      { "id": 205, "distName": "bagerhat", "distDName": "বাগেরহাট" },
+      { "id": 206, "distName": "magura", "distDName": "মাগুরা" },
+      { "id": 207, "distName": "khulna", "distDName": "খুলনা" }
     ]
   },
   {
     "id": 3,
     "divName": "barisal",
     "disName": "বরিশাল",
-    "discription": "ঢাকা বঙ্গালদেশসী",
+    "discription": "বরিশাল বঙ্গালদেশসী",
     "districts": [
-      { "id": 301, "distName": "sdsd", "distDName": "ক্কক" },
-      { "id": 3102, "distName": "asdr", "distDName": "দসদর" },
-      { "id": 303, "distName": "tdsr", "distDName": "তাসদ্দসল" },
-      { "id": 304, "distName": "foasddpur", "distDName": "ফাসদপুর" },
-      { "id": 3105, "distName": "borguna", "distDName": "বরসাদনা" }
+      { "id": 301, "distName": "barguna", "distDName": "বরগুনা" },
+      { "id": 302, "distName": "bhola", "distDName": "ভোলা" },
+      { "id": 303, "distName": "jhalokati", "distDName": "ঝালকাঠি" },
+      { "id": 304, "distName": "patuakhali", "distDName": "পাটুয়াখালি" },
+      { "id": 305, "distName": "pirojpur", "distDName": "ফিরোজপুর" },
+      { "id": 306, "distName": "barisal", "distDName": "বরিশাল" }
     ]
   },
   {
     "id": 4,
     "divName": "sylhet",
     "disName": "সিলেট",
-    "discription": "ঢাকা বঙ্গালদেশসী",
+    "discription": "সিলেট বঙ্গালদেশসী",
     "districts": [
-      { "id": 401, "distName": "sasvar", "distDName": "সাভার" },
-      { "id": 402, "distName": "gazipur", "distDName": "গাযিপুর" },
-      { "id": 403, "distName": "tangailr", "distDName": "তাঙ্গাইল" },
-      { "id": 404, "distName": "foridpur", "distDName": "ফরিদপুর" },
-      { "id": 405, "distName": "borguna", "distDName": "বরগুনা" }
+      { "id": 401, "distName": "habiganj", "distDName": "হবিগঞ্জ" },
+      { "id": 402, "distName": "moulvibazar", "distDName": "মৌলভীবাজার" },
+      { "id": 403, "distName": "sunamganj", "distDName": "সুনামগঞ্জ" },
+      { "id": 404, "distName": "sylhet", "distDName": "সিলেট " }
     ]
-  }
+  },
+  {
+      "id": 5,
+      "divName": "chittagong",
+      "disName": "চট্টগ্রাম",
+      "discription": "চট্টগ্রাম বঙ্গালদেশসী",
+      "districts": [
+        { "id": 501, "distName": "coxsbazar", "distDName": "কক্সবাজার" },
+        { "id": 502, "distName": "noakhali", "distDName": "নোয়াখালী" },
+        { "id": 503, "distName": "feni", "distDName": "ফেনী" },
+        { "id": 504, "distName": "chandpur", "distDName": "চাঁদপুর" },
+        { "id": 505, "distName": "brahmanbaria", "distDName": "ব্রাহ্মণবাড়িয়া" },
+        { "id": 506, "distName": "bandarban", "distDName": "বান্দরবান" },
+        { "id": 507, "distName": "rangamati", "distDName": "রাঙ্গামাটি" },
+        { "id": 508, "distName": "khagrachhari", "distDName": "খাগড়াছড়ি" },
+        { "id": 509, "distName": "chittagong", "distDName": "চট্টগ্রাম" }
+      ]
+    },
+    {
+      "id": 6,
+      "divName": "mymensingh",
+      "disName": "ময়মনসিংহ",
+      "discription": "ময়মনসিংহ বঙ্গালদেশসী",
+      "districts": [
+        { "id": 601, "distName": "netrokona", "distDName": "নেত্রকোনা" },
+        { "id": 602, "distName": "jamalpur", "distDName": "জামালপুর" },
+        { "id": 603, "distName": "sherpur", "distDName": "শেরপুর" },
+        { "id": 604, "distName": "mymensingh", "distDName": "ময়মনসিংহ" }
+      ]
+    },
+    {
+      "id": 7,
+      "divName": "rajshahi",
+      "disName": "রাজশাহী ",
+      "discription": "রাজশাহী  বঙ্গালদেশসী",
+      "districts": [
+        { "id": 701, "distName": "bogra", "distDName": "বগুড়া" },
+        { "id": 702, "distName": "chapinawabganj", "distDName": "চাপাইনবাবগঞ্জ" },
+        { "id": 703, "distName": "joypurhat", "distDName": "জয়পুরহাট" },
+        { "id": 704, "distName": "naogaon", "distDName": "নওগাঁ" },
+        { "id": 705, "distName": "natore", "distDName": "নাটর" },
+        { "id": 706, "distName": "rajshahi", "distDName": "রাজশাহী" }
+      ]
+    },
+    {
+      "id": 8,
+      "divName": "rangpur",
+      "disName": "রংপুর",
+      "discription": "রংপুর বঙ্গালদেশসী",
+      "districts": [
+        { "id": 801, "distName": "dinajpur", "distDName": "দিনাজপুর" },
+        { "id": 802, "distName": "gaibandha", "distDName": "গাইবান্ধা" },
+        { "id": 803, "distName": "kurigram", "distDName": "কুড়িগ্রাম" },
+        { "id": 804, "distName": "lalmonirhat", "distDName": "লালমনিরহাট" },
+        { "id": 805, "distName": "panchagarh", "distDName": "পঞ্চগড়" },
+        { "id": 806, "distName": "thakurgaon", "distDName": "ঠাকুরগাঁও" },
+        { "id": 807, "distName": "rangpur", "distDName": "রংপুর" }
+      ]
+    }
 ]
