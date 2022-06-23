@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { NavLink } from "react-router-dom";
-import divisons from "../../assets/Division.json";
+import { divisions } from "../../assets/Division.js";
 
 const Navbar = () => {
   return (
@@ -39,7 +39,7 @@ const Navbar = () => {
               বিভাগ
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {divisons.map((pd) => {
+              {divisions.map((pd) => {
                 return (
                   <NavLink to={`/${pd.divName}`} end>
                     <a class="dropdown-item" href="#">

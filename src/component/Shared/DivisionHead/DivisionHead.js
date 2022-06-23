@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import divisions from "../../../assets/Division.json";
-import img1 from "../../../assets/images/13.jpg";
+import { divisions } from "../../../assets/Division.js";
 import ZillaUnderDivision from "../ZillaUnderDivision";
 import "./DivisionHead.css";
 const DivisionHead = ({ division }) => {
@@ -15,7 +14,7 @@ const DivisionHead = ({ division }) => {
                 <div className="container">
                   <img
                     class="card-img-top rounded image"
-                    src={img1}
+                    src={pd.divImg}
                     alt="Card image cap"
                   />
                   <h2 class="card-text text-center">{pd.disName}</h2>

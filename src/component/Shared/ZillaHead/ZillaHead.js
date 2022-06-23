@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import divisions from "../../../assets/Division.json";
+import { divisions } from "../../../assets/Division";
 import ZillaShow from "../../Zilla/ZillaShow";
 const ZillaHead = () => {
   const { division, zilla } = useParams();
