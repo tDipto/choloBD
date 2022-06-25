@@ -124,7 +124,7 @@ export const divisions = [
     divName: "mymensingh",
     disName: "ময়মনসিংহ",
     discription: "ময়মনসিংহ বাংলাদেশ",
-    divImg: require("../Public/divImg/dhaka.jpeg"),
+    divImg: require("../Public/divImg/mymensingh.jpeg"),
     districts: [
       { id: 601, distName: "netrokona", distDName: "নেত্রকোনা",
       disImg: require("../Public/zillaImg/mymensinghImg/netrokona.jpg")
