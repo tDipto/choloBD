@@ -4,7 +4,7 @@ export const divisions = [
     divName: "dhaka",
     disName: "ঢাকা",
     discription: "ঢাকা বাংলাদেশ",
-    divImg: require("../Public/divImg/dhaka.jpeg"),
+    divImg: require("../Public/divImg/dhaka.png"),
     districts: [
       {
         id: 101,
@@ -124,14 +124,32 @@ export const divisions = [
     divName: "mymensingh",
     disName: "ময়মনসিংহ",
     discription: "ময়মনসিংহ বাংলাদেশ",
-    divImg: require("../Public/divImg/mymensingh.jpeg"),
+    divImg: require("../Public/divImg/mymensingh.png"),
     districts: [
-      { id: 601, distName: "netrokona", distDName: "নেত্রকোনা",
-      disImg: require("../Public/zillaImg/mymensinghImg/netrokona.jpg")
-     },
-      { id: 602, distName: "jamalpur", distDName: "জামালপুর",  disImg: require("../Public/zillaImg/mymensinghImg/jamalpur.jpg") },
-      { id: 603, distName: "sherpur", distDName: "শেরপুর" , disImg: require("../Public/zillaImg/mymensinghImg/sherpur.jpg")},
-      { id: 604, distName: "mymensingh", distDName: "ময়মনসিংহ", disImg: require("../Public/zillaImg/mymensinghImg/mymensingh.jpg") },
+      {
+        id: 601,
+        distName: "netrokona",
+        distDName: "নেত্রকোনা",
+        disImg: require("../Public/zillaImg/mymensinghImg/netrokona.jpg"),
+      },
+      {
+        id: 602,
+        distName: "jamalpur",
+        distDName: "জামালপুর",
+        disImg: require("../Public/zillaImg/mymensinghImg/jamalpur.jpg"),
+      },
+      {
+        id: 603,
+        distName: "sherpur",
+        distDName: "শেরপুর",
+        disImg: require("../Public/zillaImg/mymensinghImg/sherpur.jpg"),
+      },
+      {
+        id: 604,
+        distName: "mymensingh",
+        distDName: "ময়মনসিংহ",
+        disImg: require("../Public/zillaImg/mymensinghImg/mymensingh.jpg"),
+      },
     ],
   },
   {
@@ -141,16 +159,54 @@ export const divisions = [
     discription: "রাজশাহী  বাংলাদেশ",
     divImg: require("../Public/divImg/rajshahi.png"),
     districts: [
-      { 
-        id: 701, distName: "bogra", distDName: "বগুড়া",  disImg: require("../Public/zillaImg/rajshahiImg/bogra.jpg")
-     },
-      { id: 702, distName: "chapinawabganj", distDName: "চাপাইনবাবগঞ্জ",disImg: require("../Public/zillaImg/rajshahiImg/chapainawabganj.jpg") },
-      { id: 703, distName: "joypurhat", distDName: "জয়পুরহাট",disImg: require("../Public/zillaImg/rajshahiImg/joypurhat.jpg") },
-      { id: 704, distName: "naogaon", distDName: "নওগাঁ",disImg: require("../Public/zillaImg/rajshahiImg/naogaon.jpg") },
-      { id: 705, distName: "natore", distDName: "নাটোর",disImg: require("../Public/zillaImg/rajshahiImg/natore.jpg") },
-      { id: 706, distName: "rajshahi", distDName: "রাজশাহী",disImg: require("../Public/zillaImg/rajshahiImg/rajshahi.jpg")  },
-      { id: 707, distName: "pabna", distDName: "পাবনা",disImg: require("../Public/zillaImg/rajshahiImg/pabna.jpg")  },
-      { id: 708, distName: "sirajganj", distDName: "সিরাজগঞ্জ",disImg: require("../Public/zillaImg/rajshahiImg/sirajganj.jpg")  },
+      {
+        id: 701,
+        distName: "bogra",
+        distDName: "বগুড়া",
+        disImg: require("../Public/zillaImg/rajshahiImg/bogra.jpg"),
+      },
+      {
+        id: 702,
+        distName: "chapinawabganj",
+        distDName: "চাপাইনবাবগঞ্জ",
+        disImg: require("../Public/zillaImg/rajshahiImg/chapainawabganj.jpg"),
+      },
+      {
+        id: 703,
+        distName: "joypurhat",
+        distDName: "জয়পুরহাট",
+        disImg: require("../Public/zillaImg/rajshahiImg/joypurhat.jpg"),
+      },
+      {
+        id: 704,
+        distName: "naogaon",
+        distDName: "নওগাঁ",
+        disImg: require("../Public/zillaImg/rajshahiImg/naogaon.jpg"),
+      },
+      {
+        id: 705,
+        distName: "natore",
+        distDName: "নাটোর",
+        disImg: require("../Public/zillaImg/rajshahiImg/natore.jpg"),
+      },
+      {
+        id: 706,
+        distName: "rajshahi",
+        distDName: "রাজশাহী",
+        disImg: require("../Public/zillaImg/rajshahiImg/rajshahi.jpg"),
+      },
+      {
+        id: 707,
+        distName: "pabna",
+        distDName: "পাবনা",
+        disImg: require("../Public/zillaImg/rajshahiImg/pabna.jpg"),
+      },
+      {
+        id: 708,
+        distName: "sirajganj",
+        distDName: "সিরাজগঞ্জ",
+        disImg: require("../Public/zillaImg/rajshahiImg/sirajganj.jpg"),
+      },
     ],
   },
   {
@@ -160,13 +216,48 @@ export const divisions = [
     discription: "রংপুর বাংলাদেশ",
     divImg: require("../Public/divImg/rangpur.png"),
     districts: [
-      { id: 801, distName: "dinajpur", distDName: "দিনাজপুর" ,disImg: require("../Public/zillaImg/rangpurImg/dinajpur.jpg") },
-      { id: 802, distName: "gaibandha", distDName: "গাইবান্ধা",disImg: require("../Public/zillaImg/rangpurImg/gaibandha.jpg") },
-      { id: 803, distName: "kurigram", distDName: "কুড়িগ্রাম",disImg: require("../Public/zillaImg/rangpurImg/kurigram.jpg") },
-      { id: 804, distName: "lalmonirhat", distDName: "লালমনিরহাট",disImg: require("../Public/zillaImg/rangpurImg/lalmonirhat.jpg") },
-      { id: 805, distName: "panchagarh", distDName: "পঞ্চগড়" ,disImg: require("../Public/zillaImg/rangpurImg/panchagarh.jpg")},
-      { id: 806, distName: "thakurgaon", distDName: "ঠাকুরগাঁও" ,disImg: require("../Public/zillaImg/rangpurImg/thakurgaon.jpg")},
-      { id: 807, distName: "rangpur", distDName: "রংপুর",disImg: require("../Public/zillaImg/rangpurImg/rangpur.jpg") },
+      {
+        id: 801,
+        distName: "dinajpur",
+        distDName: "দিনাজপুর",
+        disImg: require("../Public/zillaImg/rangpurImg/dinajpur.jpg"),
+      },
+      {
+        id: 802,
+        distName: "gaibandha",
+        distDName: "গাইবান্ধা",
+        disImg: require("../Public/zillaImg/rangpurImg/gaibandha.jpg"),
+      },
+      {
+        id: 803,
+        distName: "kurigram",
+        distDName: "কুড়িগ্রাম",
+        disImg: require("../Public/zillaImg/rangpurImg/kurigram.jpg"),
+      },
+      {
+        id: 804,
+        distName: "lalmonirhat",
+        distDName: "লালমনিরহাট",
+        disImg: require("../Public/zillaImg/rangpurImg/lalmonirhat.jpg"),
+      },
+      {
+        id: 805,
+        distName: "panchagarh",
+        distDName: "পঞ্চগড়",
+        disImg: require("../Public/zillaImg/rangpurImg/panchagarh.jpg"),
+      },
+      {
+        id: 806,
+        distName: "thakurgaon",
+        distDName: "ঠাকুরগাঁও",
+        disImg: require("../Public/zillaImg/rangpurImg/thakurgaon.jpg"),
+      },
+      {
+        id: 807,
+        distName: "rangpur",
+        distDName: "রংপুর",
+        disImg: require("../Public/zillaImg/rangpurImg/rangpur.jpg"),
+      },
     ],
   },
 ];
