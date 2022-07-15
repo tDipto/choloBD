@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { divisions } from "../../../assets/Division.js";
+import DivisionBody from "../../Division/DivisionBody.js";
 import ZillaUnderDivision from "../ZillaUnderDivision";
 import "./DivisionHead.css";
 const DivisionHead = ({ division }) => {
@@ -9,17 +10,16 @@ const DivisionHead = ({ division }) => {
         .filter((div) => div.divName === division)
         .map((pd) => (
           <>
-            <div className="main-container">
+            <div className="main-container bg-info bg-gradient">
               <div className="left-side">
-                <div className="container">
+                <div className="container bg-light">
                   <img
                     class="card-img-top rounded image"
                     src={pd.divImg}
                     alt="Card image cap"
                   />
-                  <h2 class="card-text text-center">{pd.disName}</h2>
+                  <h2 class="card-text text-center p-3">{pd.disName}</h2>
                 </div>
-                <hr />
               </div>
               <div className="right-side">
                 <div class="py-2">
@@ -31,6 +31,7 @@ const DivisionHead = ({ division }) => {
             </div>
           </>
         ))}
+      <DivisionBody></DivisionBody>
     </>
   );
 };

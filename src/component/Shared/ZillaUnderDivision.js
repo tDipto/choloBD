@@ -11,14 +11,15 @@ const ZillaUnderDivision = ({ nameinfo }) => {
           height: "auto",
           margin: "10px",
           padding: "10px",
-        
         }}
       >
         {nameinfo.map((pd) => {
           /*  console.log(pd); */
           return (
             <Link to={pd.distName}>
-              <div class="bg-dark m-3 p-2 text-center text-white rounded">{pd.distDName}</div>
+              <div class="bg-dark m-3 p-2 text-center text-white rounded">
+                {pd.distDName}
+              </div>
             </Link>
           );
         })}

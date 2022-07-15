@@ -1,4 +1,3 @@
-import React from "react";
 import img1 from "../../assets/images/13.jpg";
 import img2 from "../../assets/images/4.jpg";
 import img3 from "../../assets/images/6.jpg";
@@ -7,10 +6,10 @@ const Carosol = () => {
   return (
     <div
       id="carouselExampleControls"
-      class="carousel slide d-inline-block h-50"
+      class="carousel slide d-inline "
       data-ride="carousel"
     >
-      <div class="carousel-inner ">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="" src={img1} alt="First slide" />
         </div>

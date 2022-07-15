@@ -1,0 +1,24 @@
+.division-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  flex: 0 1 350px;
+  background-color: #0288d1;
+}
+.division-flex-items img {
+  max-width: 400px;
+  height: auto;
+}
+.division-flex-text {
+  max-width: fit-content;
+  text-align: justify;
+  padding: 1em;
+}
+.division-flex-items {
+  background-color: #ebebeb;
+  /* background-color: #4c4c4c; */
+  margin: 10px;
+  border-bottom: 5px #4c4c4c solid;
+  border-radius: 10px;
+}
