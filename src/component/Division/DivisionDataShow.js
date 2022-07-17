@@ -24,7 +24,7 @@ const DivisionDataShow = ({ data }) => {
 
                   state={{ ...place }}
                 >
-                  Read more
+                  বিস্তারিত পড়ুন......
                 </Link>
               </div>
             </div>

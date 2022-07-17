@@ -37,6 +37,7 @@ const ZillaHead = () => {
                       const {
                         placeImg,
                         placeName,
+
                         distName,
                         distNameBn,
                         placeDesc,
@@ -46,16 +47,16 @@ const ZillaHead = () => {
                           <div className="division-flex-items">
                             <img src={placeImg} alt="one" />
                             <div className="division-flex-text">
-                              <h2>{placeName}</h2>
+                              <h3>{placeName}</h3>
                               <p>{distNameBn}</p>
+                              <hr />
                               <p>{placeDesc.slice(0, 50)}</p>
                               <Link
-                                className=""
                                 to={distName}
                                 // ei route set up kora lagbe
                                 state={{ ...data }}
                               >
-                                Read more
+                                বিস্তারিত পড়ুন.....
                               </Link>
                             </div>
                           </div>
