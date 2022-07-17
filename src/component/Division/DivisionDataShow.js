@@ -15,7 +15,8 @@ const DivisionDataShow = ({ data }) => {
             <div className="division-flex-items">
               <img src={placeImg} alt="one" />
               <div className="division-flex-text">
-                <h2>{placeName}</h2>
+                <h3>{placeName}</h3>
+                <hr />
                 <p>{distNameBn}</p>
                 <p>{placeDesc.slice(0, 50)}</p>
                 <Link

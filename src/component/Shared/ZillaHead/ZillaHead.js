@@ -27,9 +27,7 @@ const ZillaHead = () => {
 
             return (
               <>
-                <h2 className="p-3 m-3">
-                  {places.distNameBn} জেলার জনপ্রিয় স্থানসমূহ
-                </h2>
+                <h2 className="p-3 m-3">এ জেলার জনপ্রিয় স্থানসমূহ</h2>
                 <div className="division-container">
                   {places
                     .filter((dis) => dis.distName === zilla)

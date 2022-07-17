@@ -15,9 +15,10 @@ const ShowDetailsInfo = ({ location }) => {
               alt="Card"
             />
             <div class="card-body">
-              <h4 className="text-left">{location.state.placeName}</h4>
+              <h3 className="text-center">{location.state.placeName}</h3>
+              <hr />
               <p class="card-text text-justify">{location.state.placeDesc}</p>
-
+              <hr />
               <h5 className="text-right">{location.state.distNameBn}</h5>
             </div>
           </div>

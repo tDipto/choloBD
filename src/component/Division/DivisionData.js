@@ -1,7 +1,7 @@
 // dhakar moto sobgula kora lagbe
 export const DivisionData = [
   {
-    id: 1,
+    divId: 1,
     divisionName: "dhaka",
     places: [
       {
@@ -162,7 +162,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 2,
+    divId: 2,
     divisionName: "rajshahi",
     places: [
       {
@@ -232,7 +232,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 3,
+    divId: 3,
     divisionName: "khulna",
     places: [
       {
@@ -302,7 +302,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 4,
+    divId: 4,
     divisionName: "chittagong",
     places: [
       {
@@ -372,7 +372,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 5,
+    divId: 5,
     divisionName: "sylhet",
     places: [
       {
@@ -442,7 +442,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 6,
+    divId: 6,
     divisionName: "barisal",
     places: [
       {
@@ -512,7 +512,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 7,
+    divId: 7,
     divisionName: "rangpur",
     places: [
       {
@@ -582,7 +582,7 @@ export const DivisionData = [
     ],
   },
   {
-    id: 8,
+    divId: 8,
     divisionName: "mymensingh",
     places: [
       {
