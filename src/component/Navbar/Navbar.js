@@ -5,8 +5,6 @@ import { divisions } from "../../assets/Division.js";
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse position-sticky fixed-top">
-      <p class="text-success">চলো ঘুরি বাংলাদেশ</p>
-
       <button
         class="navbar-toggler"
         type="button"
@@ -20,12 +18,21 @@ const Navbar = () => {
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-light">
-          <NavLink to="/" class="nav-item">
-            <a class="nav-link" href="#">
-              হোম
-            </a>
-          </NavLink>
+        <ul class="navbar-nav mr-auto  text-light">
+          <li>
+            <NavLink to="/" class="nav-item">
+              <a class="nav-link text-success" href="#">
+                চলো ঘুরি বাংলাদেশ
+              </a>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/" class="nav-item">
+              <a class="nav-link" href="#">
+                হোম
+              </a>
+            </NavLink>
+          </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"

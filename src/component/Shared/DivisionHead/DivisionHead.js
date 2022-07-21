@@ -18,7 +18,7 @@ const DivisionHead = ({ division }) => {
                     src={pd.divImg}
                     alt="Card image cap"
                   />
-                  <h2 class="card-text text-center p-3">{pd.disName}</h2>
+                  <h2 class="card-text text-center p-3">{pd.disName} বিভাগ </h2><hr />
                 </div>
               </div>
               <div className="right-side">
