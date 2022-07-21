@@ -109,11 +109,11 @@ const Navbar = () => {
           <input
             class="form-control mr-sm-2"
             type="search"
-            placeholder="খুঁজুন"
+            placeholder="জায়গার নাম লিখুন!"
             aria-label="Search"
           />
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
+            খুঁজুন
           </button>
         </form>
       </div>

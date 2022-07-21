@@ -19,7 +19,7 @@ function App() {
         <Route path="/sylhet" element={<Sylhet />} /> */}
         {/*    <Route path="/barisal" element={<Barisal />} /> */}
         <Route path="/:division" element={<Division />} />
-        <Route path="/:division/:zilla" element={<Zilla />} />
+        <Route  path="/:division/:zilla" element={<Zilla />} />
         <Route path="/:division/:zilla/:_id" element={<DistrictShow />} />
         <Route
           path="/:division/:zilla/:place/:_id"

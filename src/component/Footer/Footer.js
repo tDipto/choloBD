@@ -34,35 +34,47 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-two">
-          <h2>Contact Us</h2>
-          <p>
-            {" "}
-            <input type="text" name="your name" id="" placeholder="your name" />
-          </p>
-          <p>
-            {" "}
-            <input
-              type="email"
-              name="your email"
-              id=""
-              placeholder="your email"
-            />
-          </p>
-          <textarea placeholder="write here" cols="40" rows="5"></textarea>
-          <br />
-          <button type="submit">Send Message</button>
+          <h2>যোগাযোগ করুন </h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">ই-মেইল</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">পাসওয়ার্ড </label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">মতামত দিন </label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              পাঠিয়ে দিন
+            </button>
+          </form>
         </div>
         <div className="footer-three">
-          <h2>Developer Information</h2>
-          <p>
-            <h6>Abu Bakkar Siddique Raihan</h6>
-          </p>
-          <p>
-            <h6>Tanzim Rahman</h6>
-          </p>
-          <p>
-            <h6>Md. Shimul Mahmud</h6>
-          </p>
+          <h2>ডেভেলপার তথ্যসমূহ</h2>
+          <div>
+            <p>মোঃ শিমুল মাহমুদ</p>
+          </div>
+          {/* <div>Icons</div> */}
         </div>
       </div>
       <div className="copyright  p-3 m-0 ">
