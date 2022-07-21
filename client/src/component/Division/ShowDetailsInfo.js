@@ -1,3 +1,4 @@
+import "./ShowDetailsInfo.css";
 const ShowDetailsInfo = ({ location }) => {
   console.log(location);
   return (
@@ -7,10 +8,10 @@ const ShowDetailsInfo = ({ location }) => {
         <div class="d-inline-block">
           <div
             class="card"
-            style={{ width: "120vh", backgroundColor: "#EEEEEE" }}
+            style={{ width: "100%", backgroundColor: "#EEEEEE" }}
           >
             <img
-              class="card-img-top"
+              class="card-img-top Image-place"
               src={location.state.placeImg}
               alt="Card"
             />
