@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
+import bg_img from "../../../assets/bg-review.jpg";
 import ShowDetailsInfo from "../../Division/ShowDetailsInfo";
 
 const DistrictShow = () => {
@@ -10,7 +11,14 @@ const DistrictShow = () => {
 
   return (
     <section>
-      <div>
+      <div
+        style={{
+          /* backgroundColor: "#dbd8e3", */
+          backgroundImage: `url(${bg_img})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         <ShowDetailsInfo location={location}></ShowDetailsInfo>
       </div>
     </section>

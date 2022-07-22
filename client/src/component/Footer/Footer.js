@@ -46,7 +46,7 @@ const Footer = () => {
                 placeholder="Enter email"
               />
             </div>
-            <div class="form-group">
+            {/* <div class="form-group">
               <label for="exampleInputPassword1">পাসওয়ার্ড </label>
               <input
                 type="password"
@@ -54,7 +54,7 @@ const Footer = () => {
                 id="exampleInputPassword1"
                 placeholder="Password"
               />
-            </div>
+            </div> */}
             <div class="form-group">
               <label for="exampleFormControlTextarea1">মতামত দিন </label>
               <textarea

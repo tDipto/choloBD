@@ -10,7 +10,7 @@ const DivisionHead = ({ division }) => {
         .filter((div) => div.divName === division)
         .map((pd) => (
           <>
-            <div className="main-container bg-info bg-gradient">
+            <div className="main-container">
               <div className="left-side">
                 <div className="container bg-light">
                   <img
@@ -18,7 +18,8 @@ const DivisionHead = ({ division }) => {
                     src={pd.divImg}
                     alt="Card image cap"
                   />
-                  <h2 class="card-text text-center p-3">{pd.disName} বিভাগ </h2><hr />
+                  <h2 class="card-text text-center p-3">{pd.disName} বিভাগ </h2>
+                  <hr />
                 </div>
               </div>
               <div className="right-side">

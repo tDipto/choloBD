@@ -4,7 +4,7 @@ import "./DivisionDataShow.css";
 const DivisionBody = () => {
   return (
     <>
-      <h2 className="p-3 m-3"> জনপ্রিয় স্থানসমূহ</h2>
+      <h2 className="p-3 m-3 text-center"> জনপ্রিয় স্থানসমূহ</h2>
       <div className="division-container">
         {DivisionData.map((data) => (
           <DivisionDataShow data={data} />

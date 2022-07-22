@@ -4,7 +4,9 @@
   justify-content: center;
 
   flex: 0 1 350px;
-  background-color: #0288d1;
+  background-image: url(../../assets/bg-div-place.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .division-flex-items > img {
   max-width: 400px;

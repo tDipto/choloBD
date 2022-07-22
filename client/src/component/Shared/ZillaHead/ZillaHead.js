@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import bg_img from "../../../assets/bg-div.jpg";
 import { divisions } from "../../../assets/Division";
 import { DivisionData } from "../../Division/DivisionData";
 
@@ -10,7 +11,10 @@ const ZillaHead = () => {
     <>
       <div
         style={{
-          backgroundColor: "#dbd8e3",
+          /* backgroundColor: "#dbd8e3", */
+          backgroundImage: `url(${bg_img})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         }}
       >
         {divisions
@@ -35,7 +39,7 @@ const ZillaHead = () => {
                       const {
                         placeImg,
                         placeName,
-
+                        placeNameEn,
                         distName,
                         distNameBn,
                         placeDesc,
@@ -50,7 +54,7 @@ const ZillaHead = () => {
                               <hr />
                               <p>{placeDesc.slice(0, 50)}</p>
                               <Link
-                                to={distName}
+                                to={placeNameEn}
                                 // ei route set up kora lagbe
                                 state={{ ...data }}
                               >

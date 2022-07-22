@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import bg_img from "../../assets/bg-div.jpg";
 import ShowDetailsInfo from "../Division/ShowDetailsInfo";
 
 /* eslint-disable jsx-a11y/img-redundant-alt */
@@ -11,7 +12,7 @@ const ZillaShow = ({ zillaNames, zillaTag }) => {
         {zillaNames
           .filter((pd) => pd.distName === zillaTag)
           .map((pd2) => (
-            <div class="text-center ">
+            <div class="text-center">
               <div class="d-inline-block">
                 <div
                   class="card"
@@ -26,7 +27,15 @@ const ZillaShow = ({ zillaNames, zillaTag }) => {
                     src={pd2.disImg}
                     alt="Card image cap"
                   />
-                  <div class="card-body text-center">
+                  <div
+                    class="card-body text-center"
+                    style={{
+                      backgroundImage: `url(${bg_img})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                      fontWeight: "bold",
+                    }}
+                  >
                     <p class="card-text">{pd2.distDName}</p>
                   </div>
                 </div>

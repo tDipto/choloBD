@@ -3,7 +3,8 @@
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #dbd8e3;
+  /* background-color: #dbd8e3; */
+  background-image: url(../../../assets/bg-div.jpg);
 }
 .image {
   max-height: 400px;
@@ -12,7 +13,4 @@ h2 {
   font-size: 30px;
   font-family: "Courier New", Courier, monospace;
   padding-top: 30px;
-}
-.right-side {
-  /* background-color: #5c5470; */
 }

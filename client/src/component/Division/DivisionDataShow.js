@@ -8,8 +8,14 @@ const DivisionDataShow = ({ data }) => {
     <>
       {params.division === divisionName &&
         places.map((place) => {
-          const { placeImg, placeName, distName, distNameBn, placeDesc } =
-            place;
+          const {
+            placeImg,
+            placeName,
+            distName,
+            distNameBn,
+            placeDesc,
+            placeNameEn,
+          } = place;
 
           return (
             <div className="division-flex-items">
@@ -20,7 +26,7 @@ const DivisionDataShow = ({ data }) => {
                 <p>{distNameBn}</p>
                 <p>{placeDesc.slice(0, 50)}</p>
                 <Link
-                  to={distName}
+                  to={distName + "/" + placeNameEn}
                   /* call hosse zillashow te */
 
                   state={{ ...place }}
