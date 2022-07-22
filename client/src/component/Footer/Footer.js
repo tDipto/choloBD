@@ -74,6 +74,12 @@ const Footer = () => {
           <div>
             <p>মোঃ শিমুল মাহমুদ</p>
           </div>
+          <div>
+            <p>তানজিম রহমান</p>
+          </div>
+          <div>
+            <p>মোঃ শিমুল মাহমুদ</p>
+          </div>
           {/* <div>Icons</div> */}
         </div>
       </div>

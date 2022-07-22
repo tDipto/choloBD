@@ -22,6 +22,7 @@ const ZillaShow = ({ zillaNames, zillaTag }) => {
                     backgroundColor: "#ffffff",
                   }}
                 >
+                  {console.log(pd2)}
                   <img
                     class="card-img-top"
                     src={pd2.disImg}

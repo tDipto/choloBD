@@ -240,7 +240,7 @@ export const divisions = [
         id: 509,
         distName: "chittagong",
         distDName: "চট্টগ্রাম",
-        divImg: require("../Public/zillaImg/chittagongImg/chittagong.jpeg"),
+        disImg: require("../Public/zillaImg/chittagongImg/chittagong.jpeg"),
       },
     ],
   },

@@ -23,7 +23,7 @@ const ShowDetailsInfo = ({ location }) => {
               <hr />
               <p class="card-text text-justify">{location.state.placeDesc}</p>
               <hr />
-              <h5>ঢাকা থেকে যাওয়ার উপায়</h5>
+              <h5>যাওয়ার উপায়</h5>
               <p class="card-text text-justify">{location.state.roadmap}</p>
 
               <hr />
