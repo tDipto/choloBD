@@ -1,10 +1,14 @@
 import "./Footer.css";
 /* eslint-disable jsx-a11y/anchor-has-content */
+<<<<<<< HEAD
 
 const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+=======
+const Footer = () => {
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181
   return (
     <>
       <div className="main-footer">
@@ -41,6 +45,7 @@ const Footer = () => {
           <h2>যোগাযোগ করুন </h2>
           <form>
             <div class="form-group">
+<<<<<<< HEAD
               <label for="exampleInputEmail1">আপনার নাম </label>
               <input
                 type="name"
@@ -51,6 +56,8 @@ const Footer = () => {
               />
             </div>
             <div class="form-group">
+=======
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181
               <label for="exampleInputEmail1">ই-মেইল</label>
               <input
                 type="email"
@@ -72,22 +79,30 @@ const Footer = () => {
             <div class="form-group">
               <label for="exampleFormControlTextarea1">মতামত দিন </label>
               <textarea
+<<<<<<< HEAD
                 typeof="comment"
+=======
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
             </div>
 
+<<<<<<< HEAD
             <button
               onSubmit={handleSubmit}
               type="submit"
               class="btn btn-primary"
             >
+=======
+            <button type="submit" class="btn btn-primary">
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181
               পাঠিয়ে দিন
             </button>
           </form>
         </div>
+<<<<<<< HEAD
         <div className="footer-three px-5">
           <h2>ডেভেলপার তথ্যসমূহ</h2>
           <div>
@@ -162,6 +177,26 @@ const Footer = () => {
           এই ওয়েবসাইটের সর্বসত্ত্ব সংরক্ষিত থাকবে কর্তৃপক্ষ &copy;{" "}
           {new Date().getFullYear()}
         </h6>
+=======
+        <div className="footer-three">
+          <h2>ডেভেলপার তথ্যসমূহ</h2>
+          <div>
+            <p>মোঃ শিমুল মাহমুদ</p>
+          </div>
+          <div>
+            <p>তানজিম রহমান</p>
+          </div>
+          <div>
+            <p>মোঃ শিমুল মাহমুদ</p>
+          </div>
+          {/* <div>Icons</div> */}
+        </div>
+      </div>
+      <div className="copyright  p-3 m-0 ">
+        <h5 className="text-center">
+          All rights reserved to the team &copy; {new Date().getFullYear()}
+        </h5>
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181
       </div>
     </>
   );

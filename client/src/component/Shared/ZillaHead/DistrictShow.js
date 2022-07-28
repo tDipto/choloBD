@@ -1,6 +1,10 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
+<<<<<<< HEAD
 import bg_img from "../../../assets/lovepik.jpg";
+=======
+import bg_img from "../../../assets/bg-review.jpg";
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181
 import ShowDetailsInfo from "../../Division/ShowDetailsInfo";
 
 const DistrictShow = () => {

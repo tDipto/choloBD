@@ -23,11 +23,14 @@ const Navbar = () => {
           <li>
             <NavLink to="/" class="nav-item">
               <a class="nav-link text-success" href="#">
+<<<<<<< HEAD:client/src/component/Navbar/Navbar.js
                 <img
                   style={{ maxWidth: "50px", maxHeight: "100px" }}
                   src={logo}
                   alt=""
                 />
+=======
+>>>>>>> 70eddc63c5f18736e25b4dc5020c1c6d33f88181:src/component/Navbar/Navbar.js
                 চলো ঘুরি বাংলাদেশ
               </a>
             </NavLink>
