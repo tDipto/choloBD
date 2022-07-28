@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { NavLink } from "react-router-dom";
-import { divisions } from "../../assets/Division.js";
 
+import logo from "../../assets/chologhuribd.png";
+import { divisions } from "../../assets/Division.js";
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse position-sticky fixed-top">
@@ -22,6 +23,11 @@ const Navbar = () => {
           <li>
             <NavLink to="/" class="nav-item">
               <a class="nav-link text-success" href="#">
+                <img
+                  style={{ maxWidth: "50px", maxHeight: "100px" }}
+                  src={logo}
+                  alt=""
+                />
                 চলো ঘুরি বাংলাদেশ
               </a>
             </NavLink>
@@ -30,13 +36,6 @@ const Navbar = () => {
             <NavLink to="/" class="nav-item">
               <a class="nav-link" href="#">
                 হোম
-              </a>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/" class="nav-item">
-              <a class="nav-link" href="#">
-                নতুন
               </a>
             </NavLink>
           </li>

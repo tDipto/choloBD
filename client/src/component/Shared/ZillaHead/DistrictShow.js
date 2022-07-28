@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from "react";
-/* import { useLocation, useParams } from "react-router-dom"; */
-import bg_img from "../../../assets/bg-review.jpg";
+import React from "react";
+import { useLocation, useParams } from "react-router-dom";
+import bg_img from "../../../assets/lovepik.jpg";
 import ShowDetailsInfo from "../../Division/ShowDetailsInfo";
 
 const DistrictShow = () => {
-  /*  const params = useParams();
-  const location = useLocation(); */
+  const params = useParams();
+  const location = useLocation();
   // const { division, zilla, id } = params;
-  const [divisionData, serDivisionData] = useState([]);
-  /* console.log(params); */
-  useEffect(() => {
-    fetch("http://localhost:5000/getReview")
-      .then((res) => res.json())
-      .then((data) => serDivisionData(data));
-  }, []);
+  console.log(params);
 
   return (
     <section>
@@ -25,9 +19,7 @@ const DistrictShow = () => {
           backgroundSize: "cover",
         }}
       >
-        {divisionData.map((data) => (
-          <ShowDetailsInfo divisionData={data}></ShowDetailsInfo>
-        ))}
+        <ShowDetailsInfo location={location}></ShowDetailsInfo>
       </div>
     </section>
   );

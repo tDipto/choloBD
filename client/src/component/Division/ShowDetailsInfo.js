@@ -1,72 +1,57 @@
-import { useState } from "react";
-import { useParams } from "react-router-dom";
-/* import Footer from "../Footer/Footer"; */
+import Footer from "../Footer/Footer";
 import NavBar from "../Navbar/Navbar";
 import "./ShowDetailsInfo.css";
-const ShowDetailsInfo = ({ divisionData }) => {
-  /*  console.log(divisionData); */
-  const {
-    placeName,
-    distName,
-    distNameBn,
-    placeDesc,
-    placeNameEn,
-    divName,
-    hotel,
-    roadmap,
-    userReview,
-  } = divisionData;
-  const params = useParams();
-  const { division, zilla, _id } = params;
-  const [sum, setSum] = useState(0);
-
-  let k = 0;
-  let xz = userReview?.length;
-  for (let i = 0; i < xz; i++) {
-    k += userReview[i]?.rating;
-    /* k /= xz; */
-    console.log(k);
-  }
-
-  /* console.log(k); */
-
+const ShowDetailsInfo = ({ location }) => {
+  console.log(location);
   return (
     <>
+      {" "}
       <NavBar></NavBar>
-      {_id === placeNameEn && (
-        <div class="text-center container">
-          <div class="d-inline-block">
-            <div
-              class="card"
-              style={{ width: "100%", backgroundColor: "#EEEEEE" }}
-            >
-              {/* <img
+      <div class="text-center container">
+        <div class="d-inline-block">
+          <div class="card" style={{ width: "100%", backgroundColor: "#fff" }}>
+            <img
               class="card-img-top Image-place"
-              src={placeImg}
+              src={location.state.placeImg}
               alt="Card"
-            /> */}
-              <div class="card-body">
-                <h3 className="text-center">{placeName}</h3>
-                <hr />
-                <p class="card-text text-justify">{placeDesc}</p>
-                <hr />
-                <h5>যাওয়ার উপায়</h5>
-                <p class="card-text text-justify">{roadmap}</p>
-
-                <hr />
-                <h5>থাকার ব্যবস্থা</h5>
-                <p class="card-text text-justify">{hotel}</p>
-                <p class="card-text text-justify">{k}</p>
-
-                <hr />
-                {}
-                <h5 className="text-right">{distNameBn}</h5>
+            />
+            <div class="card-body">
+              <div className="d-float">
+                {" "}
+                <h3 className="text-left float-left font-weight-bold ">
+                  {location.state.placeName}
+                </h3>
+                <h4 className="float-right mx-5 p-2">
+                  {/* <Ratings></Ratings> */}
+                </h4>
+                <div className="div-float"></div>
               </div>
+              <hr />
+              <p class="card-text text-justify">{location.state.placeDesc}</p>
+              <hr />
+              <h5 className="font-weight-bold text-left">
+                ঢাকা থেকে যাওয়ার উপায়
+              </h5>{" "}
+              <br />
+              <p class="card-text text-justify">{location.state.roadmap}</p>
+              <hr />
+              <h5 className="font-weight-bold text-left">
+                থাকার ব্যবস্থা
+              </h5>{" "}
+              <br />
+              <p class="card-text text-justify">{location.state.hotel}</p>
+              <p>
+                <a href={location.state.hotelLink}>
+                  অন্যান্য হোটেলের তথ্য জানতে এখানে ক্লিক করুন{" "}
+                </a>
+              </p>
+              <hr />
+              <h5 className="text-right">{location.state.distNameBn}</h5>
             </div>
           </div>
         </div>
-      )}
-      {/*  <Footer></Footer> */}
+      </div>
+      <Footer></Footer>
     </>
   );
 };

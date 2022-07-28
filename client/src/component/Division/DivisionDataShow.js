@@ -2,33 +2,50 @@ import { Link, useParams } from "react-router-dom";
 import "./DivisionDataShow.css";
 const DivisionDataShow = ({ data }) => {
   const params = useParams();
-  /* console.log(data); */
-  const { placeName, distName, distNameBn, placeDesc, placeNameEn, divName } =
-    data;
+
+  const { places, divisionName } = data;
   return (
     <>
-      {/* {console.log(data)} */}
+      {" "}
+      {params.division === divisionName &&
+        places.map((place) => {
+          const {
+            placeImg,
+            placeName,
+            distName,
+            distNameBn,
+            placeDesc,
+            placeNameEn,
+          } = place;
 
-      {params.division === divName && (
-        <div className="division-flex-items">
-          {console.log(placeName)}
-          {/* <img src={placeImg} alt="one" /> */}
-          <div className="division-flex-text">
-            <h3>{placeName}</h3>
-            <hr />
-            <p>{distNameBn}</p>
-            <p>{placeDesc.slice(0, 50)}</p>
-            <Link
-              to={distName + "/" + placeNameEn}
-              /* call hosse zillashow te */
+          return (
+            <div className="division-flex-items">
+              <img
+                src={placeImg}
+                alt="one"
+                style={{ height: "300px", width: "400px" }}
+              />
+              <div className="division-flex-text">
+                <div>
+                  <h3>{placeName}</h3>
+                  {/*  <Ratings></Ratings> */}
+                </div>
 
-              /* state={{ ...place }} */
-            >
-              বিস্তারিত পড়ুন......
-            </Link>
-          </div>
-        </div>
-      )}
+                <hr />
+                <p>{distNameBn}</p>
+                <p>{placeDesc.slice(0, 50)}</p>
+                <Link
+                  to={distName + "/" + placeNameEn}
+                  /* call hosse zillashow te */
+
+                  state={{ ...place }}
+                >
+                  বিস্তারিত পড়ুন......
+                </Link>
+              </div>
+            </div>
+          );
+        })}
     </>
   );
 };

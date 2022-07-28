@@ -4,7 +4,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   /* background-color: #dbd8e3; */
-  background-image: url(../../../assets/bg-div.jpg);
+  background-image: url(../../../assets/lovepik.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image {
   max-height: 400px;

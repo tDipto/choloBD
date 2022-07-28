@@ -9,6 +9,7 @@ const Home = () => {
       <Carosol></Carosol>
       <MainBody></MainBody>
       {/* desh er most popular places dekhano lagbe MostPopularData theke mapping kore */}
+
       <Footer></Footer>
     </>
   );
