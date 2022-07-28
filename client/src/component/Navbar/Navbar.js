@@ -33,6 +33,13 @@ const Navbar = () => {
               </a>
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/" class="nav-item">
+              <a class="nav-link" href="#">
+                নতুন
+              </a>
+            </NavLink>
+          </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"

@@ -1,22 +1,27 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const MongoClient = require("mongodb").MongoClient;
+const fs = require("fs");
+/* const MongoClient = require("mongodb").MongoClient; */
 require("dotenv").config();
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.b264i.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const { MongoClient, ServerApiVersion } = require("mongodb");
+/* const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.b264i.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`; */
+const uri =
+  "mongodb+srv://Dipto:dipto@cluster0.b264i.mongodb.net/?retryWrites=true&w=majority";
 const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.json());
 
 const port = 5000;
 
 app.get("/", (req, res) => {
-  res.send("hello form db");
+  res.send("Cholo Ghuri Bangladesh Backend");
 });
 
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect((err) => {
+/* const client = new MongoClient(uri, { useNewUrlParser: true }); */
+/* client.connect((err) => {
   const reviewCollection = client.db("CholoBD").collection("review");
   app.post("/addReview", (req, res) => {
     const review = req.body;
@@ -24,7 +29,62 @@ client.connect((err) => {
       res.send(result.insertedCount);
     });
   });
+}); */
+const client = new MongoClient(uri, { useNewUrlParser: true });
+MongoClient.connect(uri)
+  .then(() => console.log("Connected To Database"))
+  .catch((err) => console.log("err"));
+
+const reviewCollection = client.db("CholoBD").collection("review");
+app.post("/addReview", (req, res) => {
+  const review = req.body;
+  reviewCollection.insertOne(review).then((result) => {
+    res.send(result.insertedCount);
+  });
 });
-/* .then((res) => console.log("DATABASE CONECTED"))
-  .catch((err) => console.log("FAILED DATABASE")); */
+app.get("/getReview", (req, res) => {
+  const review = req.body;
+  reviewCollection.find().toArray((err, documents) => {
+    res.send(documents);
+  });
+});
+app.put("/addComment", (req, res) => {
+  const placeName = req.body.placeNameEn;
+  const review = req.body.userReview;
+  console.log(review);
+  reviewCollection.updateOne(
+    { placeNameEn: placeName },
+    { $push: { userReview: review } }
+  );
+  res.send("okay");
+});
+app.post("/getComment", (req, res) => {
+  const placeName = req.body.placeNameEn;
+  console.log(placeName);
+  reviewCollection.findOne({ placeNameEn: placeName }, (err, documents) => {
+    res.send(documents.userReview);
+  });
+});
+
+/* app.get("/api/places", (req, res) => {
+  fs.readFile("./db.json", "utf-8", (err, data) => {
+    
+    const showPlaces = JSON.parse(data).places;
+    res.send(showPlaces);
+  });
+}); */
+
+/* app.post("/api/places", (req, res) => {
+  const newPlace = req.body;
+  fs.readFile("./db.json", "utf-8", (err, data) => {
+    const places = JSON.parse(data);
+    places.places.push(newPlace);
+    
+    fs.watchFile("./db.json", JSON.stringify(places), (err) => {
+      res.send(newPlace);
+    });
+  });
+  res.send(req.body);
+}); */
+
 app.listen(process.env.PORT || port, () => console.log("SERVER RUNNING"));
