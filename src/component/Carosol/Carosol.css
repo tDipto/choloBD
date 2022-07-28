@@ -1,8 +1,0 @@
-/* img {
-  height: 635px;
-  width: 1530px;
-} */
-.carousel-item > img {
-  width: 100%;
-  max-height: 450px;
-}
