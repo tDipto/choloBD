@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import NavBar from "../Navbar/Navbar";
+import ReviewForm from "../ReviewForm/ReviewForm";
+import ShowReview from "../ShowReview/ShowReview";
 import "./ShowDetailsInfo.css";
 const ShowDetailsInfo = ({ placeData }) => {
   const params = useParams();
@@ -68,6 +70,12 @@ const ShowDetailsInfo = ({ placeData }) => {
               </div>
             </div>
           </div>
+          <ReviewForm
+            placeNameBn={placeData.placeName}
+            placeNameEn={placeData.placeNameEn}
+          ></ReviewForm>
+          <h2>সব রিভিউ</h2>
+          <ShowReview placeName={placeData.placeNameEn}></ShowReview>
           <Footer></Footer>
         </>
       )}
