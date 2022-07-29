@@ -47,7 +47,7 @@ const ZillaHead = () => {
                       return (
                         <>
                           <div className="division-flex-items">
-                            <img src={placeImg} alt="one" />
+                            <img style={{width:"360px",height:"300px"}} src={placeImg} alt="one" />
                             <div className="division-flex-text">
                               <h3>{placeName}</h3>
                               <p>{distNameBn}</p>

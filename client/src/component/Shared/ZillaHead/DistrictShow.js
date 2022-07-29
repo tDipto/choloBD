@@ -3,6 +3,7 @@ import { useLocation, useParams } from "react-router-dom";
 import gif from "../../../assets/Loading.gif";
 import bg_img from "../../../assets/lovepik.jpg";
 import ShowDetailsInfo from "../../Division/ShowDetailsInfo";
+import ReviewForm from '../../ReviewForm/ReviewForm'
 
 const DistrictShow = () => {
   const params = useParams();
@@ -44,6 +45,7 @@ const DistrictShow = () => {
           ))}
         </div>
       )}
+      <ReviewForm/>
     </>
   );
 };
