@@ -33,9 +33,6 @@ const DivisionBody = () => {
           divisionData.map((data) => <DivisionDataShow data={data} />)
         )}
       </div>
-      <section>
-        {/* eikhne oi division er most popular places gula dekhano lagbe */}
-      </section>
     </>
   );
 };

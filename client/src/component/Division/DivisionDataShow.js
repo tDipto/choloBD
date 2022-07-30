@@ -29,7 +29,7 @@ const DivisionDataShow = ({ data }) => {
             <hr />
             <p>{distNameBn}</p>
             <p>
-              rating : {k}/{total}= {k / total ? 1 : 0}
+              রেটিং :{k}/{total}= {k / (total ? total : 1)}
             </p>
             <p>{placeDesc.slice(0, 50)}</p>
             <Link
@@ -43,7 +43,6 @@ const DivisionDataShow = ({ data }) => {
           </div>
         </div>
       )}
-      )
     </>
   );
 };

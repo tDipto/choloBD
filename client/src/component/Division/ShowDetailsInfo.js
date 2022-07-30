@@ -63,19 +63,31 @@ const ShowDetailsInfo = ({ placeData }) => {
                   <hr />
                   <p></p>
                   <p>
-                    rating :{k}/{total}= {k / total ? 1 : 0}
+                    রেটিং : {k}/{total}= {k / (total ? total : 1)}
                   </p>
                   <h5 className="text-right">{placeData.distNameBn}</h5>
                 </div>
               </div>
             </div>
           </div>
+          <hr />
+          <div
+            style={{
+              backgroundColor: "#",
+              opacity: "1",
+            }}
+          >
+            <h2 style={{ padding: "10px" }}>
+              মন্তব্যকারীর নাম, রেটিং এবং মন্তব্য দেখুন
+            </h2>
+            <div className="d-flex p-2">
+              <ShowReview placeName={placeData.placeNameEn}></ShowReview>
+            </div>
+          </div>
           <ReviewForm
             placeNameBn={placeData.placeName}
             placeNameEn={placeData.placeNameEn}
           ></ReviewForm>
-          <h2>সব রিভিউ</h2>
-          <ShowReview placeName={placeData.placeNameEn}></ShowReview>
           <Footer></Footer>
         </>
       )}
