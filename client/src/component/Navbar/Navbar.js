@@ -1,9 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import logo from "../../assets/chologhuribd.png";
 import { divisions } from "../../assets/Division.js";
+import ReviewForm from "../Review/Review/ReviewForm";
+
 const Navbar = () => {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  /* 
+   function afterOpenModal() {
+     // references are now sync'd and can be accessed.
+     subtitle.style.color = "#f00";
+   } */
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse position-sticky fixed-top">
       <button
@@ -39,6 +57,19 @@ const Navbar = () => {
               </a>
             </NavLink>
           </li>
+          <button
+              style={{ backgroundColor: "#1CC7C1" }}
+              class=" btn text-white"
+              onClick={openModal}
+            >
+              BOOK APPOINTMENT
+            </button>
+
+            <ReviewForm
+              modalIsOpen={modalIsOpen}
+              closeModal={closeModal}
+            ></ReviewForm>
+
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
