@@ -80,7 +80,10 @@ const ShowDetailsInfo = ({ placeData }) => {
             <h2 style={{ padding: "10px" }}>
               মন্তব্যকারীর নাম, রেটিং এবং মন্তব্য দেখুন
             </h2>
-            <div className="d-flex p-2">
+            <div
+              className=" d-flex flex-wrap p-3 justify-content-evenly align-content-stretch"
+              // style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr" }}
+            >
               <ShowReview placeName={placeData.placeNameEn}></ShowReview>
             </div>
           </div>

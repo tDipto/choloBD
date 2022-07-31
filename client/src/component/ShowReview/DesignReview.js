@@ -10,7 +10,7 @@ const DesignReview = ({ data }) => {
         <p className="reviewer-comments">মন্তব্য : {data.comments}</p>
       </div> */}
       <div>
-        <div class="card" style={{ width: "25rem", margin: "10px" }}>
+        <div class="card" style={{ width: "28rem", margin: "10px" }}>
           <div class="card-body">
             <h5 class="card-title">নাম : {data.name}</h5>
             <h6 class="card-subtitle mb-2 text-muted">
