@@ -1,33 +1,33 @@
-import React from 'react';
-import Modal from 'react-modal';
+import React from "react";
+import Modal from "react-modal";
 
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
   },
 };
 
-Modal.setAppElement('#root');
- 
-const ReviewForm = ()=>{
-    const [modalIsOpen, setIsOpen] = React.useState(false);
+Modal.setAppElement("#root");
 
-    function openModal() {
-        setIsOpen(true);
-      }
-    
-      function closeModal() {
-        setIsOpen(false);
-      }
-    
-    return (
-        <div>
-            <button onClick={openModal}>Open Modal</button>
+const ReviewForm = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -45,9 +45,8 @@ const ReviewForm = ()=>{
           <button>the modal</button>
         </form>
       </Modal>
-            
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ReviewForm;
@@ -58,8 +57,8 @@ export default ReviewForm;
 //     const [modal, setmodal] = useState(false);
 //     return (
 //         <div>
-//             <Modal 
-//                 size='1g' 
+//             <Modal
+//                 size='1g'
 //                 isOpen={modal}
 //                 toggle={()=> setmodal(!modal)}
 //             >
