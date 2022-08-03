@@ -28,9 +28,7 @@ const DivisionDataShow = ({ data }) => {
 
             <hr />
             <p>{distNameBn}</p>
-            <p>
-              রেটিং :{k}/{total}= {k / (total ? total : 1)}
-            </p>
+            <p>রেটিং :{k / (total ? total : 1).toPrecision(2)}</p>
             <p>{placeDesc.slice(0, 50)}</p>
             <Link
               to={distName + "/" + placeNameEn}

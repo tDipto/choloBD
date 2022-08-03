@@ -8,7 +8,6 @@ const ReviewForm = ({ placeNameBn, placeNameEn }) => {
   const [name, setName] = useState("");
   const [rating, setRating] = useState(0);
   const [comments, setComment] = useState();
-  const [placeName, setPlaceName] = useState();
 
   const handleSubmit = (e) => {
     // e.preventDefault();

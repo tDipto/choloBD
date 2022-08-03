@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
   };
   return (
     <>

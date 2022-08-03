@@ -60,7 +60,7 @@ app.put("/addComment", (req, res) => {
 });
 app.post("/getComment", (req, res) => {
   const placeName = req.body.placeNameEn;
-  console.log(placeName);
+  /* console.log(placeName); */
   reviewCollection.findOne({ placeNameEn: placeName }, (err, documents) => {
     res.send(documents.userReview);
   });

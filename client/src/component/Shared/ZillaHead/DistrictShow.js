@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import bg_img from "../../../assets/awesome.webp";
+import bg_img from "../../../assets/bg-div.jpg";
 import gif from "../../../assets/Loading.gif";
 import ShowDetailsInfo from "../../Division/ShowDetailsInfo";
 

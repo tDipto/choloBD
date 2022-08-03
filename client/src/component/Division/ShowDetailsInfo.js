@@ -63,7 +63,8 @@ const ShowDetailsInfo = ({ placeData }) => {
                   <hr />
                   <p></p>
                   <p>
-                    রেটিং : {k}/{total}= {k / (total ? total : 1)}
+                    রেটিং : {k}/{total}={" "}
+                    {k / (total ? total : 1).toPrecision(2)}
                   </p>
                   <h5 className="text-right">{placeData.distNameBn}</h5>
                 </div>
