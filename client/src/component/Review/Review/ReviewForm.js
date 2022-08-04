@@ -20,35 +20,42 @@ Modal.setAppElement("#root");
 
 const ReviewForm = ({ modalIsOpen, closeModal }) => {
   const params = useParams();
-  const [rating, setRating] = useState(0);
+
   const [placeName, setName] = useState("");
   const [placeNameEn, setPlaceNameEn] = useState("");
+  const [distName, setdistName] = useState("");
+  const [distNameBn, setdistNameBn] = useState("");
+  const [divName, setDivName] = useState("");
   const [roadmap, setRoadmap] = useState();
   const [hotel, setHotel] = useState();
   const [placeDesc, setPlaceDesc] = useState();
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     /* console.log(placeNameEn); */
     /* setPlaceName(placeNameEn); */
+    /*  const dist = distName.split(" ");
+    setdistName(dist[0]);
+    setdistNameBn(dist[1]); */
+    /* console.log(dist[1]); */
 
     let info = {
-      placeNameEn,
-
       placeName,
-
+      divName,
+      placeNameEn,
+      distName,
+      distNameBn,
       roadmap,
       hotel,
       placeDesc,
-      rating: parseInt(rating),
     };
     console.log(info);
-    // fetch("http://localhost:5000/addComment", {
-    //   method: "PUT",
-    //   headers: { "content-type": "application/json" },
-    //   body: JSON.stringify(info),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => console.log(data));
+    fetch("http://localhost:5000/addReview", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(info),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   };
   /*  const {
     register,
@@ -75,7 +82,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
           <h2>{} সম্পর্কে মন্তব্য করুন </h2>
           <form onSubmit={handleSubmit}>
             <div class="form-group">
-              <label for="exampleInputEmail1">আপনার নাম </label>
+              <label for="exampleInputEmail1">placeName bangla </label>
               <input
                 onChange={(e) => setName(e.target.value)}
                 type="text"
@@ -83,44 +90,98 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                 id="exampleInputEmail1"
                 value={placeName}
                 placeholder="বাংলায় লিখুন"
-                required
                 aria-describedby="emailHelp"
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">আপনার নাম </label>
+              <label for="exampleInputEmail1">placeName eng </label>
               <input
-                onChange={(e) => setPlaceNameEn(e.target.value)}
+                onChange={(e) =>
+                  setPlaceNameEn(
+                    e.target.value.replace(/\s+/g, "").toLowerCase()
+                  )
+                }
                 type="text"
                 class="form-control"
                 id="exampleInputEmail1"
                 value={placeNameEn}
                 placeholder="PlaceNameEn"
-                required
                 aria-describedby="emailHelp"
               />
             </div>
-
+            ////////////////////////////// ///////////////////////
             <div class="form-group">
-              <label for="exampleInputEmail1">রেটিং দিন </label>
+              <label for="exampleInputEmail1">বিভাগ</label>
               <select
                 required
-                onChange={(e) => setRating(e.target.value)}
-                value={rating}
+                onChange={(e) => setDivName(e.target.value)}
+                value={divName}
                 class="form-control"
                 id="exampleFormControlSelect1"
               >
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option value="dhaka">ঢাকা</option>
+                <option value="sylhet">সিলেট</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
               </select>
+              {divName === "dhaka" && (
+                <>
+                  <label for="1">জেলা </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      {
+                        setdistName(e.target.value);
+                        /* setdistName(e.target.value.split(" ")[0]); */
+                        setdistNameBn(e.target.value.split(",")[1]);
+                        /*    let dist = distName.split(" ");
+                        console.log(dist);
+                        setdistName(dist[0]);
+                        setdistNameBn(dist[1]); */
+                      }
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="11"
+                  >
+                    <option value="dhaka,ঢাকা">ঢাকা</option>
+                    <option value="gajipur,গাজীপুর">গাজীপুর</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                </>
+              )}
+              {divName === "sylhet" && (
+                <>
+                  <label for="22">জেলা </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="2"
+                  >
+                    <option value="sylhet,সিলেট">সিলেট</option>
+                    <option value="sunamganj,সুনামগঞ্জ">সুনামগঞ্জ</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                </>
+              )}
             </div>
-
+            ////////////////////////////////////
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">মতামত দিন </label>
+              <label for="exampleFormControlTextarea1">Road Map </label>
               <textarea
                 typeof="comment"
                 onChange={(e) => setRoadmap(e.target.value)}
@@ -133,7 +194,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               ></textarea>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">মতামত দিন </label>
+              <label for="exampleFormControlTextarea1">Description </label>
               <textarea
                 typeof="comment"
                 onChange={(e) => setPlaceDesc(e.target.value)}
@@ -146,7 +207,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               ></textarea>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">মতামত দিন </label>
+              <label for="exampleFormControlTextarea1">Hotel</label>
               <textarea
                 typeof="comment"
                 onChange={(e) => setHotel(e.target.value)}
@@ -158,7 +219,6 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                 value={hotel}
               ></textarea>
             </div>
-
             <button type="submit" class="btn btn-primary">
               পোস্ট করুন
             </button>
