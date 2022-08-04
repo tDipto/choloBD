@@ -7,17 +7,10 @@ import { divisions } from "../../assets/Division.js";
 import ReviewForm from "../Review/Review/ReviewForm";
 
 const Navbar = () => {
-  let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
   }
-
-  /* 
-   function afterOpenModal() {
-     // references are now sync'd and can be accessed.
-     subtitle.style.color = "#f00";
-   } */
 
   function closeModal() {
     setIsOpen(false);
@@ -58,17 +51,17 @@ const Navbar = () => {
             </NavLink>
           </li>
           <button
-              style={{ backgroundColor: "#1CC7C1" }}
-              class=" btn text-white"
-              onClick={openModal}
-            >
-              BOOK APPOINTMENT
-            </button>
+            style={{ backgroundColor: "#FFFFFF" }}
+            class=" btn text-dark"
+            onClick={openModal}
+          >
+            notun
+          </button>
 
-            <ReviewForm
-              modalIsOpen={modalIsOpen}
-              closeModal={closeModal}
-            ></ReviewForm>
+          <ReviewForm
+            modalIsOpen={modalIsOpen}
+            closeModal={closeModal}
+          ></ReviewForm>
 
           <li class="nav-item dropdown">
             <a
@@ -92,53 +85,6 @@ const Navbar = () => {
                   </NavLink>
                 );
               })}
-              {/* <NavLink to="/dhaka" end>
-                <a class="dropdown-item" href="#">
-                  ঢাকা
-                </a>
-              </NavLink>
-
-              <NavLink to="/khulna" end>
-                <a class="dropdown-item" href="#">
-                  খুলনা
-                </a>
-              </NavLink>
-
-              <NavLink to="/barisal" end>
-                <a class="dropdown-item" href="#">
-                  বরিশাল
-                </a>
-              </NavLink>
-
-              <NavLink to="/chittagong" end>
-                <a class="dropdown-item" href="#">
-                  চট্টগ্রাম
-                </a>
-              </NavLink>
-
-              <NavLink to="/rajshahi" end>
-                <a class="dropdown-item" href="#">
-                  রাজশাহী
-                </a>
-              </NavLink>
-
-              <NavLink to="/sylhet" end>
-                <a class="dropdown-item" href="#">
-                  সিলেট
-                </a>
-              </NavLink>
-
-              <NavLink to="/rangpur" end>
-                <a class="dropdown-item" href="#">
-                  রংপুর
-                </a>
-              </NavLink>
-
-              <NavLink to="/mymanshingh" end>
-                <a class="dropdown-item" href="#">
-                  ময়মনসিংহ
-                </a>
-              </NavLink> */}
             </div>
           </li>
         </ul>

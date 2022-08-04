@@ -44,7 +44,7 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "normal",
   // Theme of editor
-  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "terminal.integrated.fontFamily": "CaskaydiaCove NF",
   // "terminal.integrated.fontFamily": "JetBrains Mono",
   //   "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   // "workbench.colorTheme": "Dracula",
