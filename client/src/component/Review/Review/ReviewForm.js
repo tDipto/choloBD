@@ -21,6 +21,13 @@ Modal.setAppElement("#root");
 const ReviewForm = ({ modalIsOpen, closeModal }) => {
   const params = useParams();
 
+  // const[info,setInfo] = useState({});
+  // const handleBlur = e => {
+  //   const newInfo = {..info};
+  //   newInfo[e.target.name] = e.target.value;
+  //    setInfo(newInfo )
+  // }
+
   const [placeName, setName] = useState("");
   const [placeNameEn, setPlaceNameEn] = useState("");
   const [distName, setdistName] = useState("");
@@ -29,6 +36,12 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
   const [roadmap, setRoadmap] = useState();
   const [hotel, setHotel] = useState();
   const [placeDesc, setPlaceDesc] = useState();
+  const [file, setFile] = useState(null);
+
+  const handleFileChange= (e) =>{
+    const newFile = e.target.files[0];
+    setFile(newFile);
+  }
   const handleSubmit = (e) => {
     // e.preventDefault();
     /* console.log(placeNameEn); */
@@ -47,16 +60,44 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
       roadmap,
       hotel,
       placeDesc,
+      file,
     };
+
     console.log(info);
+    const formData = new FormData()
+    formData.append('file', file);
+    formData.append('placeName', placeName);
+    formData.append('distName', distName);
+    formData.append('divName', divName);
+    formData.append('roadmap', roadmap);
+    formData.append('placeNameEn', placeNameEn);
+    formData.append('distNameBn', distNameBn);
+    formData.append('hotel', hotel);
     fetch("http://localhost:5000/addReview", {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      // headers: { "content-type": "application/json" },
       body: JSON.stringify(info),
+      body: formData,
     })
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
+
+  // fetch('http://localhost:5000//addAPlace', {
+  //   method: 'POST',
+  //   body: formData
+  // })
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data)
+  // })
+  // .catch(error => {
+  //   console.error(error)
+  // })
+  // const handleFileChange= (e) =>{
+  //   const newFile = e.target.files[0];
+  //   setFile(newFile);
+  // }
   /*  const {
     register,
     handleSubmit,
@@ -87,6 +128,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 class="form-control"
+                name="placeNameBangla"
                 id="exampleInputEmail1"
                 value={placeName}
                 placeholder="বাংলায় লিখুন"
@@ -103,6 +145,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                 }
                 type="text"
                 class="form-control"
+                name="placeNameEng"
                 id="exampleInputEmail1"
                 value={placeNameEn}
                 placeholder="PlaceNameEn"
@@ -146,20 +189,23 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     }}
                     value={distName}
                     class="form-control"
-                    id="11"
+                    id="1"
                   >
                     <option value="dhaka,ঢাকা">ঢাকা</option>
                     <option value="gajipur,গাজীপুর">গাজীপুর</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
+                    <option value="kishoreganj,কিশোরগঞ্জ">কিশোরগঞ্জ</option>
+                    <option value="tangail,টাঙ্গাইল">টাঙ্গাইল</option>
+                    <option value="faridpur,ফরিদপুর">ফরিদপুর</option>
+                    <option value="narayanganj,নারায়ণগঞ্জ">নারায়ণগঞ্জ</option>
+                    <option value="narsingdi,নরসিংদী">নরসিংদী</option>
+                    <option value="munshiganj,মুন্সীগঞ্জ">মুন্সীগঞ্জ</option>
+                    <option value="dhaka,ঢাকা">ঢাকা</option>
                   </select>
                 </>
               )}
               {divName === "sylhet" && (
                 <>
-                  <label for="22">জেলা </label>
+                  <label for="2">জেলা </label>
                   <select
                     required
                     onChange={(e) => {
@@ -172,11 +218,9 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     id="2"
                   >
                     <option value="sylhet,সিলেট">সিলেট</option>
-                    <option value="sunamganj,সুনামগঞ্জ">সুনামগঞ্জ</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
+                    <option value="habiganj,হবিগঞ্জ">হবিগঞ্জ</option>
+                    <option value="moulvibazar,মৌলভীবাজার">মৌলভীবাজার</option>
+                    <option value="sunamganj,সুনামগঞ্জ">সুনামগঞ্জ</option>      
                   </select>
                 </>
               )}
@@ -221,6 +265,11 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                 value={hotel}
               ></textarea>
             </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Upload a image</label>
+              <input onChange={handleFileChange} type="file" class="form-control" id="exampleFormControlTextarea1" placeholder="Picture" />
+            </div>
+
             <button type="submit" class="btn btn-primary">
               পোস্ট করুন
             </button>

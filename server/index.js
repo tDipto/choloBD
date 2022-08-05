@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const fs = require("fs");
+const fileUpload = require('express-fileupload');
 /* const MongoClient = require("mongodb").MongoClient; */
 require("dotenv").config();
 const { MongoClient, ServerApiVersion } = require("mongodb");
@@ -12,6 +13,8 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static('Places'));
+app.use(fileUpload());
 app.use(express.json());
 
 const port = 5000;
@@ -36,12 +39,25 @@ MongoClient.connect(uri)
   .catch((err) => console.log("err"));
 
 const reviewCollection = client.db("CholoBD").collection("review");
+
+
 app.post("/addReview", (req, res) => {
-  const review = req.body;
-  reviewCollection.insertOne(review).then((result) => {
-    res.send(result.insertedCount);
+  // const review = req.body;
+  // reviewCollection.insertOne(review).then((result) => {
+  //   res.send(result.insertedCount);
+  // });
+  const file = req.files.file;
+    console.log(file); 
+    file.mv(`${__dirname}/places/${file.name}`, err => {
+      if(err){
+        console.log(err);
+        return res.status(500).send({msg:'failed to upload image'})
+      }
+      return res.send({name: file.name, path: `/${file.name}`})
   });
 });
+
+
 app.get("/getReview", (req, res) => {
   const review = req.body;
   reviewCollection.find().toArray((err, documents) => {
@@ -65,6 +81,7 @@ app.post("/getComment", (req, res) => {
     res.send(documents.userReview);
   });
 });
+
 
 /* app.get("/api/places", (req, res) => {
   fs.readFile("./db.json", "utf-8", (err, data) => {
