@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import logo from "../../assets/chologhuribd.png";
 import { divisions } from "../../assets/Division.js";
@@ -9,6 +9,8 @@ import ReviewForm from "../Review/Review/ReviewForm";
 const Navbar = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
   /* console.log(search); */
   function openModal() {
     setIsOpen(true);
@@ -17,9 +19,24 @@ const Navbar = () => {
   function closeModal() {
     setIsOpen(false);
   }
-  const handleChange = (event) => {
-    setSearch(event.target.value);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    /* console.log(placeNameEn); */
+    /* setPlaceName(placeNameEn); */
+
+    /*  let info = {
+      placeNameEn: params._id,
+      userReview: { name, comments, rating: parseInt(rating) },
+    }; */
     console.log(search);
+    navigate(`/search/${search}`);
+    /* fetch("http://localhost:5000/addComment", {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(info),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data)); */
   };
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse position-sticky fixed-top">
@@ -94,7 +111,7 @@ const Navbar = () => {
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0" onSubmit={handleSubmit}>
           <input
             class="form-control mr-sm-2"
             type="search"
@@ -104,7 +121,7 @@ const Navbar = () => {
             value={search}
           />
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            <Link to={"/search/" + { search }}>খুঁজুন</Link>
+            {/* <Link to={"/search/" + { search }}> */}খুঁজুন{/* </Link> */}
           </button>
         </form>
       </div>
