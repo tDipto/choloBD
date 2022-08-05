@@ -11,6 +11,7 @@ const DivisionDataShow = ({ data }) => {
   for (let i = 0; i < total; i++) {
     k += data.userReview[i]?.rating;
   }
+  let showk = parseFloat((k / (total ? total : 1)).toFixed(2));
   return (
     <>
       {params.division === divName && (
@@ -28,10 +29,11 @@ const DivisionDataShow = ({ data }) => {
 
             <hr />
             <p>{distNameBn}</p>
-            <p>রেটিং :{k / (total ? total : 1).toPrecision(2)}</p>
+            {console.log(showk)}
+            <p>রেটিং :{showk}</p>
             <p>{placeDesc.slice(0, 50)}</p>
             <Link
-              to={distName + "/" + placeNameEn}
+              to={distNameBn + "/" + placeNameEn}
               /* call hosse zillashow te */
 
               /* state={{ ...place }} */

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import NavBar from "../Navbar/Navbar";
 import ReviewForm from "../ReviewForm/ReviewForm";
@@ -14,6 +14,7 @@ const ShowDetailsInfo = ({ placeData }) => {
   for (let i = 0; i < total; i++) {
     k += placeData.userReview[i]?.rating;
   }
+  let showk = parseFloat((k / (total ? total : 1)).toFixed(2));
   return (
     <>
       {params._id === placeData.placeNameEn && (
@@ -56,16 +57,13 @@ const ShowDetailsInfo = ({ placeData }) => {
                   <br />
                   <p class="card-text text-justify">{placeData.hotel}</p>
                   <p>
-                    <a href={placeData.hotelLink}>
+                    <Link to={"/hotel/" + placeData.distNameBn}>
                       অন্যান্য হোটেলের তথ্য জানতে এখানে ক্লিক করুন{" "}
-                    </a>
+                    </Link>
                   </p>
                   <hr />
                   <p></p>
-                  <p>
-                    রেটিং : {k}/{total}={" "}
-                    {k / (total ? total : 1).toPrecision(2)}
-                  </p>
+                  <p>রেটিং : {showk}</p>
                   <h5 className="text-right">{placeData.distNameBn}</h5>
                 </div>
               </div>

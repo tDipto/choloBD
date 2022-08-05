@@ -1,15 +1,54 @@
-import { useLocation } from "react-router-dom";
-import bg_img from "../../assets/bg-div.jpg";
-import ShowDetailsInfo from "../Division/ShowDetailsInfo";
+import { Link, useParams } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/img-redundant-alt */
-const ZillaShow = ({ zillaNames, zillaTag }) => {
-  const location = useLocation();
+const ZillaShow = ({ data }) => {
+  const params = useParams();
 
-  if (location.state === null) {
-    return (
-      <>
-        {zillaNames
+  const { placeName, distName, distNameBn, placeDesc, placeNameEn, divName } =
+    data;
+  /*  console.log(data); */
+  let k = 0;
+  let total = data.userReview?.length;
+  for (let i = 0; i < total; i++) {
+    k += data.userReview[i]?.rating;
+  }
+  /* const location = useLocation();
+
+  if (location.state === null) { */
+  /* console.log(params.zilla);
+  console.log(distName.split(",")[0]); */
+  let showk = parseFloat((k / (total ? total : 1)).toFixed(2));
+  return (
+    <>
+      {params.zilla === distNameBn && (
+        <div className="division-flex-items">
+          {/* <img
+            src={placeImg}
+            alt="one"
+            style={{ height: "300px", width: "400px" }}
+          /> */}
+          <div className="division-flex-text">
+            <div>
+              <h3>{placeName}</h3>
+              {/*  <Ratings></Ratings> */}
+            </div>
+
+            <hr />
+            <p>{distNameBn}</p>
+            <p>রেটিং :{showk}</p>
+            <p>{placeDesc.slice(0, 50)}</p>
+            <Link
+              to={placeNameEn}
+              /* call hosse zillashow te */
+
+              /* state={{ ...place }} */
+            >
+              বিস্তারিত পড়ুন......
+            </Link>
+          </div>
+        </div>
+      )}
+      {/* {zillaNames
           .filter((pd) => pd.distName === zillaTag)
           .map((pd2) => (
             <div class="text-center">
@@ -42,16 +81,16 @@ const ZillaShow = ({ zillaNames, zillaTag }) => {
                 </div>
               </div>
             </div>
-          ))}
-      </>
-    );
-  } else {
+          ))} */}
+    </>
+  );
+  /*   } else {
     return (
       <>
         <ShowDetailsInfo location={location}></ShowDetailsInfo>
       </>
     );
-  }
+  } */
 };
 
 export default ZillaShow;

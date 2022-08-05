@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../assets/chologhuribd.png";
 import { divisions } from "../../assets/Division.js";
@@ -8,6 +8,8 @@ import ReviewForm from "../Review/Review/ReviewForm";
 
 const Navbar = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [search, setSearch] = useState("");
+  /* console.log(search); */
   function openModal() {
     setIsOpen(true);
   }
@@ -15,6 +17,10 @@ const Navbar = () => {
   function closeModal() {
     setIsOpen(false);
   }
+  const handleChange = (event) => {
+    setSearch(event.target.value);
+    console.log(search);
+  };
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse position-sticky fixed-top">
       <button
@@ -94,9 +100,11 @@ const Navbar = () => {
             type="search"
             placeholder="জায়গার নাম লিখুন!"
             aria-label="Search"
+            onChange={(e) => setSearch(e.target.value)}
+            value={search}
           />
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            খুঁজুন
+            <Link to={"/search/" + { search }}>খুঁজুন</Link>
           </button>
         </form>
       </div>

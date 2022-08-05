@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Division from "./component/Division/Division";
 import Home from "./component/Home/Home";
+import Hotel from "./component/Hotel/Hotel";
+import Search from "./component/Search/Search";
 import DistrictShow from "./component/Shared/ZillaHead/DistrictShow";
 import Zilla from "./component/Zilla/Zilla";
 
@@ -19,7 +21,9 @@ function App() {
         <Route path="/sylhet" element={<Sylhet />} /> */}
         {/*    <Route path="/barisal" element={<Barisal />} /> */}
         <Route path="/:division" element={<Division />} />
-        <Route  path="/:division/:zilla" element={<Zilla />} />
+        <Route path="/hotel/:zilla" element={<Hotel />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/:division/:zilla" element={<Zilla />} />
         <Route path="/:division/:zilla/:_id" element={<DistrictShow />} />
         <Route
           path="/:division/:zilla/:place/:_id"
