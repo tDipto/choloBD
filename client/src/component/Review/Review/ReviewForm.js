@@ -77,7 +77,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
         <button onClick={closeModal}> close</button>
         <div
           className=""
-          style={{ width: "110vh", position: "", margin: "0 auto" }}
+          style={{ width: "110vh",height: "90vh", position: "", margin: "0 auto" }}
         >
           <h2>{} সম্পর্কে মন্তব্য করুন </h2>
           <form onSubmit={handleSubmit}>
@@ -121,10 +121,12 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               >
                 <option value="dhaka">ঢাকা</option>
                 <option value="sylhet">সিলেট</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
+                <option value="rajshahi">রাজশাহী</option>
+                <option value="khulna">খুলনা</option>
+                <option value="rangpur">রংপুর</option>
+                <option value="chittagong">চট্টগ্রাম</option>
+                <option value="mymensingh">ময়মনসিংহ</option>
+                <option value="barisal">বরিশাল</option>
               </select>
               {divName === "dhaka" && (
                 <>
