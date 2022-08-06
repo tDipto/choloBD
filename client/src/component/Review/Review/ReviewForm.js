@@ -37,11 +37,12 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
   const [hotel, setHotel] = useState();
   const [placeDesc, setPlaceDesc] = useState();
   const [file, setFile] = useState(null);
+  const [pic, setPic] = useState();
 
-  const handleFileChange= (e) =>{
+  const handleFileChange = (e) => {
     const newFile = e.target.files[0];
     setFile(newFile);
-  }
+  };
   const handleSubmit = (e) => {
     // e.preventDefault();
     /* console.log(placeNameEn); */
@@ -64,15 +65,17 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
     };
 
     console.log(info);
-    const formData = new FormData()
-    formData.append('file', file);
-    formData.append('placeName', placeName);
-    formData.append('distName', distName);
-    formData.append('divName', divName);
-    formData.append('roadmap', roadmap);
-    formData.append('placeNameEn', placeNameEn);
-    formData.append('distNameBn', distNameBn);
-    formData.append('hotel', hotel);
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("placeName", placeName);
+    formData.append("distName", distName);
+    formData.append("divName", divName);
+    formData.append("roadmap", roadmap);
+    formData.append("placeNameEn", placeNameEn);
+    formData.append("distNameBn", distNameBn);
+    formData.append("hotel", hotel);
+    formData.append("placeDesc", placeDesc);
+    formData.append("pic", file.name);
     fetch("http://localhost:5000/addReview", {
       method: "POST",
       // headers: { "content-type": "application/json" },
@@ -118,13 +121,19 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
         <button onClick={closeModal}> close</button>
         <div
           className=""
-          style={{ width: "110vh",height: "90vh", position: "", margin: "0 auto" }}
+          style={{
+            width: "110vh",
+            height: "90vh",
+            position: "",
+            margin: "0 auto",
+          }}
         >
           <h2>{} সম্পর্কে মন্তব্য করুন </h2>
           <form onSubmit={handleSubmit}>
             <div class="form-group">
               <label for="exampleInputEmail1">placeName bangla </label>
               <input
+                required
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 class="form-control"
@@ -138,6 +147,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
             <div class="form-group">
               <label for="exampleInputEmail1">placeName eng </label>
               <input
+                required
                 onChange={(e) =>
                   setPlaceNameEn(
                     e.target.value.replace(/\s+/g, "").toLowerCase()
@@ -220,7 +230,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     <option value="sylhet,সিলেট">সিলেট</option>
                     <option value="habiganj,হবিগঞ্জ">হবিগঞ্জ</option>
                     <option value="moulvibazar,মৌলভীবাজার">মৌলভীবাজার</option>
-                    <option value="sunamganj,সুনামগঞ্জ">সুনামগঞ্জ</option>      
+                    <option value="sunamganj,সুনামগঞ্জ">সুনামগঞ্জ</option>
                   </select>
                 </>
               )}
@@ -229,6 +239,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Road Map </label>
               <textarea
+                required
                 typeof="comment"
                 onChange={(e) => setRoadmap(e.target.value)}
                 class="form-control"
@@ -242,6 +253,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Description </label>
               <textarea
+                required
                 typeof="comment"
                 onChange={(e) => setPlaceDesc(e.target.value)}
                 class="form-control"
@@ -255,6 +267,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Hotel</label>
               <textarea
+                required
                 typeof="comment"
                 onChange={(e) => setHotel(e.target.value)}
                 class="form-control"
@@ -267,9 +280,15 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Upload a image</label>
-              <input onChange={handleFileChange} type="file" class="form-control" id="exampleFormControlTextarea1" placeholder="Picture" />
+              <input
+                required
+                onChange={handleFileChange}
+                type="file"
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Picture"
+              />
             </div>
-
             <button type="submit" class="btn btn-primary">
               পোস্ট করুন
             </button>

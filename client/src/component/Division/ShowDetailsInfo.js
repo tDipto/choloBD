@@ -28,7 +28,7 @@ const ShowDetailsInfo = ({ placeData }) => {
               >
                 <img
                   class="card-img-top Image-place"
-                  src={placeData.placeImg}
+                  src={`http://localhost:5000/${placeData.pic}`}
                   alt="Card"
                 />
                 <div class="card-body">

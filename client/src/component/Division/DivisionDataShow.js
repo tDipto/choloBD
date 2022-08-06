@@ -3,8 +3,18 @@ import "./DivisionDataShow.css";
 const DivisionDataShow = ({ data }) => {
   const params = useParams();
 
-  const { placeName, distName, distNameBn, placeDesc, placeNameEn, divName } =
-    data;
+  const {
+    placeName,
+    distName,
+    divName,
+    roadmap,
+    placeNameEn,
+    distNameBn,
+    hotel,
+    placeDesc,
+    pic,
+  } = data;
+  console.log(data);
 
   let k = 0;
   let total = data.userReview?.length;
@@ -16,11 +26,11 @@ const DivisionDataShow = ({ data }) => {
     <>
       {params.division === divName && (
         <div className="division-flex-items">
-          {/* <img
-            src={placeImg}
+          <img
+            src={`http://localhost:5000/${pic}`}
             alt="one"
             style={{ height: "300px", width: "400px" }}
-          /> */}
+          />
           <div className="division-flex-text">
             <div>
               <h3>{placeName}</h3>
