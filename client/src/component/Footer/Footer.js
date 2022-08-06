@@ -1,10 +1,41 @@
+import React, { useRef } from "react";
 import "./Footer.css";
 /* eslint-disable jsx-a11y/anchor-has-content */
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const Footer = () => {
-  const handleSubmit = (e) => {
-    // e.preventDefault();
+  const form = useRef();
+  const Result = () => {
+    return <p>Your message was sent successfully!</p>;
   };
+
+  const [result, showResult] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_xkt8oy9",
+        "template_za4yo6a",
+        // e.target,
+        form.current,
+        "wCj-GsYbdyYPJrX7D"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    showResult(true);
+  };
+  setTimeout(() => {
+    showResult(false);
+  }, 2000);
+
   return (
     <>
       <div className="main-footer">
@@ -39,11 +70,12 @@ const Footer = () => {
         </div>
         <div className="footer-two">
           <h2>যোগাযোগ করুন </h2>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div class="form-group">
               <label for="exampleInputEmail1">আপনার নাম </label>
               <input
                 type="name"
+                name="fullName"
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
@@ -54,38 +86,29 @@ const Footer = () => {
               <label for="exampleInputEmail1">ই-মেইল</label>
               <input
                 type="email"
+                name="email"
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
             </div>
-            {/* <div class="form-group">
-              <label for="exampleInputPassword1">পাসওয়ার্ড </label>
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-                placeholder="Password"
-              />
-            </div> */}
+
             <div class="form-group">
               <label for="exampleFormControlTextarea1">মতামত দিন </label>
               <textarea
                 typeof="comment"
+                name="message"
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
             </div>
 
-            <button
-              onSubmit={handleSubmit}
-              type="submit"
-              class="btn btn-primary"
-            >
+            <button onSubmit={sendEmail} type="submit" class="btn btn-primary">
               পাঠিয়ে দিন
             </button>
+            <div className="result">{result ? <Result /> : null}</div>
           </form>
         </div>
         <div className="footer-three px-5">
@@ -111,7 +134,7 @@ const Footer = () => {
           <div className="m-8 p-1">
             <address>
               ইমেইল পাঠাতে এখানে{" "}
-              <a href="mailto:chologhurbangladesh@gmail.com">
+              <a href="mailto:shimulmahmud18@gmail.com">
                 <strong className="p-2">ক্লিক করুন</strong>
               </a>{" "}
               <br />
