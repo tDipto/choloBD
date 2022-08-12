@@ -295,6 +295,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     <option value="panchagarh,পঞ্চগড়">পঞ্চগড়</option>
                     <option value="thakurgaon,ঠাকুরগাঁও">ঠাকুরগাঁও</option>
                     <option value="rangpur,রংপুর">রংপুর</option>
+                    <option value="nilphamari,নীলফামারী">নীলফামারী</option>
                   </select>
                 </>
               )}
