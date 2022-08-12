@@ -47,12 +47,7 @@ const DivisionDataShow = ({ data }) => {
             </div>{" "}
             <br />
             <p>{placeDesc.slice(0, 50)}</p>
-            <Link
-              to={distNameBn + "/" + placeNameEn}
-              /* call hosse zillashow te */
-
-              /* state={{ ...place }} */
-            >
+            <Link to={distNameBn + "/" + placeNameEn}>
               বিস্তারিত পড়ুন......
             </Link>
           </div>
