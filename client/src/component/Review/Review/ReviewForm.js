@@ -204,6 +204,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="1"
                   >
+                    <option value="">--</option>
                     <option value="dhaka,ঢাকা">ঢাকা</option>
                     <option value="gajipur,গাজীপুর">গাজীপুর</option>
                     <option value="kishoreganj,কিশোরগঞ্জ">কিশোরগঞ্জ</option>
@@ -232,6 +233,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="2"
                   >
+                    <option value="">--</option>
                     <option value="sylhet,সিলেট">সিলেট</option>
                     <option value="habiganj,হবিগঞ্জ">হবিগঞ্জ</option>
                     <option value="moulvibazar,মৌলভীবাজার">মৌলভীবাজার</option>
@@ -255,6 +257,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="3"
                   >
+                    <option value="">--</option>
                     <option value="bogra,বগুড়া">বগুড়া</option>
                     <option value="chapinawabganj,চাপাইনবাবগঞ্জ">
                       চাপাইনবাবগঞ্জ
@@ -284,6 +287,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="4"
                   >
+                    <option value="">--</option>
                     <option value="dinajpur,দিনাজপুর">দিনাজপুর</option>
                     <option value="gaibandha,গাইবান্ধা">গাইবান্ধা</option>
                     <option value="kurigram,কুড়িগ্রাম">কুড়িগ্রাম</option>
@@ -310,6 +314,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="6"
                   >
+                    <option value="">--</option>
                     <option value="chittagong,চট্টগ্রাম">চট্টগ্রাম</option>
                     <option value="coxsbazar,কক্সবাজার">কক্সবাজার</option>
                     <option value="feni,ফেনী">ফেনী</option>
@@ -339,6 +344,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="5"
                   >
+                    <option value="">--</option>
                     <option value="mymensingh,ময়মনসিংহ">ময়মনসিংহ</option>
                     <option value="netrokona,নেত্রকোনা">নেত্রকোনা</option>
                     <option value="jamalpur,জামালপুর">জামালপুর</option>
@@ -362,6 +368,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="7"
                   >
+                    <option value="">--</option>
                     <option value="barisal,বরিশাল">বরিশাল</option>
                     <option value="barguna,বরগুনা">বরগুনা</option>
                     <option value="bhola,ভোলা">ভোলা</option>
@@ -387,6 +394,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                     class="form-control"
                     id="8"
                   >
+                    <option value="">--</option>
                     <option value="khulna,খুলনা">খুলনা</option>
                     <option value="magura,মাগুরা">মাগুরা</option>
                     <option value="bagerhat,বাগেরহাট">বাগেরহাট</option>
