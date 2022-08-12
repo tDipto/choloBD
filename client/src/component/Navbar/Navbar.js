@@ -73,18 +73,6 @@ const Navbar = () => {
               </a>
             </NavLink>
           </li>
-          <button
-            style={{ backgroundColor: "#FFFFFF" }}
-            class=" btn text-dark"
-            onClick={openModal}
-          >
-            notun
-          </button>
-
-          <ReviewForm
-            modalIsOpen={modalIsOpen}
-            closeModal={closeModal}
-          ></ReviewForm>
 
           <li class="nav-item dropdown">
             <a
@@ -110,6 +98,21 @@ const Navbar = () => {
               })}
             </div>
           </li>
+
+          <button
+            style={{ backgroundColor: "#F8F9FA" }}
+            class=" btn text-dark"
+            onClick={openModal}
+          >
+            <strong style={{ fontSize: "18px", color: "blue" }}>
+              যোগ করুন
+            </strong>
+          </button>
+
+          <ReviewForm
+            modalIsOpen={modalIsOpen}
+            closeModal={closeModal}
+          ></ReviewForm>
         </ul>
         <form class="form-inline my-2 my-lg-0" onSubmit={handleSubmit}>
           <input

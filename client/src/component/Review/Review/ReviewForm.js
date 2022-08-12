@@ -128,10 +128,10 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
             margin: "0 auto",
           }}
         >
-          <h2>{} সম্পর্কে মন্তব্য করুন </h2>
+          <h2>{} নতুনভাবে যোগ করুন </h2>
           <form onSubmit={handleSubmit}>
             <div class="form-group">
-              <label for="exampleInputEmail1">placeName bangla </label>
+              <label for="exampleInputEmail1">জায়গার নাম </label>
               <input
                 required
                 onChange={(e) => setName(e.target.value)}
@@ -145,7 +145,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">placeName eng </label>
+              <label for="exampleInputEmail1">জায়গার নাম </label>
               <input
                 required
                 onChange={(e) =>
@@ -158,11 +158,11 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                 name="placeNameEng"
                 id="exampleInputEmail1"
                 value={placeNameEn}
-                placeholder="PlaceNameEn"
+                placeholder="ইংরেজিতে লিখুন"
                 aria-describedby="emailHelp"
               />
             </div>
-            ////////////////////////////// ///////////////////////
+
             <div class="form-group">
               <label for="exampleInputEmail1">বিভাগ</label>
               <select
@@ -183,10 +183,13 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               </select>
               {divName === "dhaka" && (
                 <>
-                  <label for="1">জেলা </label>
+                  <label for="1" className="py-2">
+                    জেলা{" "}
+                  </label>
                   <select
                     required
                     onChange={(e) => {
+                      // eslint-disable-next-line no-lone-blocks
                       {
                         setdistName(e.target.value);
                         /* setdistName(e.target.value.split(" ")[0]); */
@@ -215,7 +218,9 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               )}
               {divName === "sylhet" && (
                 <>
-                  <label for="2">জেলা </label>
+                  <label for="2" className="py-2">
+                    জেলা{" "}
+                  </label>
                   <select
                     required
                     onChange={(e) => {
@@ -234,10 +239,168 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
                   </select>
                 </>
               )}
+              {divName === "rajshahi" && (
+                <>
+                  <label for="3" className="py-2">
+                    জেলা{" "}
+                  </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="3"
+                  >
+                    <option value="bogra,বগুড়া">বগুড়া</option>
+                    <option value="chapinawabganj,চাপাইনবাবগঞ্জ">
+                      চাপাইনবাবগঞ্জ
+                    </option>
+                    <option value="joypurhat,জয়পুরহাট">জয়পুরহাট</option>
+                    <option value="naogaon,নওগাঁ">নওগাঁ</option>
+                    <option value="natore,নাটোর">নাটোর</option>
+                    <option value="rajshahi,রাজশাহী">রাজশাহী</option>
+                    <option value="pabna,পাবনা">পাবনা</option>
+                    <option value="sirajganj,সিরাজগঞ্জ">সিরাজগঞ্জ</option>
+                  </select>
+                </>
+              )}
+              {divName === "rangpur" && (
+                <>
+                  <label for="4" className="py-2">
+                    জেলা{" "}
+                  </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="4"
+                  >
+                    <option value="dinajpur,দিনাজপুর">দিনাজপুর</option>
+                    <option value="gaibandha,গাইবান্ধা">গাইবান্ধা</option>
+                    <option value="kurigram,কুড়িগ্রাম">কুড়িগ্রাম</option>
+                    <option value="lalmonirhat,লালমনিরহাট">লালমনিরহাট</option>
+                    <option value="panchagarh,পঞ্চগড়">পঞ্চগড়</option>
+                    <option value="thakurgaon,ঠাকুরগাঁও">ঠাকুরগাঁও</option>
+                    <option value="rangpur,রংপুর">রংপুর</option>
+                  </select>
+                </>
+              )}
+              {divName === "chittagong" && (
+                <>
+                  <label for="6" className="py-2">
+                    জেলা{" "}
+                  </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="6"
+                  >
+                    <option value="chittagong,চট্টগ্রাম">চট্টগ্রাম</option>
+                    <option value="coxsbazar,কক্সবাজার">কক্সবাজার</option>
+                    <option value="feni,ফেনী">ফেনী</option>
+                    <option value="chandpur,চাঁদপুর">চাঁদপুর</option>
+                    <option value="brahmanbaria,ব্রাহ্মণবাড়িয়া">
+                      ব্রাহ্মণবাড়িয়া
+                    </option>
+                    <option value="bandarban,বান্দরবান">বান্দরবান</option>
+                    <option value="rangamati,রাঙ্গামাটি">রাঙ্গামাটি</option>
+                    <option value="khagrachhari,খাগড়াছড়ি">খাগড়াছড়ি</option>
+                  </select>
+                </>
+              )}
+              {divName === "mymensingh" && (
+                <>
+                  <label for="5" className="py-2">
+                    জেলা{" "}
+                  </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="5"
+                  >
+                    <option value="mymensingh,ময়মনসিংহ">ময়মনসিংহ</option>
+                    <option value="netrokona,নেত্রকোনা">নেত্রকোনা</option>
+                    <option value="jamalpur,জামালপুর">জামালপুর</option>
+                    <option value="sherpur,শেরপুর">শেরপুর</option>
+                  </select>
+                </>
+              )}
+              {divName === "barisal" && (
+                <>
+                  <label for="7" className="py-2">
+                    জেলা{" "}
+                  </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="7"
+                  >
+                    <option value="barisal,বরিশাল">বরিশাল</option>
+                    <option value="barguna,বরগুনা">বরগুনা</option>
+                    <option value="bhola,ভোলা">ভোলা</option>
+                    <option value="jhalokati,ঝালকাঠি">ঝালকাঠি</option>
+                    <option value="patuakhali,পটুয়াখালি">পটুয়াখালি</option>
+                    <option value="pirojpur,পিরোজপুর"> পিরোজপুর</option>
+                  </select>
+                </>
+              )}
+              {divName === "khulna" && (
+                <>
+                  <label for="8" className="py-2">
+                    জেলা{" "}
+                  </label>
+                  <select
+                    required
+                    onChange={(e) => {
+                      setdistName(e.target.value);
+                      /* setdistName(e.target.value.split(" ")[0]); */
+                      setdistNameBn(e.target.value.split(",")[1]);
+                    }}
+                    value={distName}
+                    class="form-control"
+                    id="8"
+                  >
+                    <option value="khulna,খুলনা">খুলনা</option>
+                    <option value="magura,মাগুরা">মাগুরা</option>
+                    <option value="bagerhat,বাগেরহাট">বাগেরহাট</option>
+                    <option value="satkhira,সাতক্ষীরা">সাতক্ষীরা</option>
+                    <option value="jashore,যশোর">যশোর</option>
+                    <option value="chuadanga,চুয়াডাঙ্গা"> চুয়াডাঙ্গা</option>
+                    <option value="kushtia,কুষ্টিয়া"> কুষ্টিয়া</option>
+                  </select>
+                </>
+              )}
             </div>
-            ////////////////////////////////////
+
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Road Map </label>
+              <label for="exampleFormControlTextarea1">রোডম্যাপ </label>
               <textarea
                 required
                 typeof="comment"
@@ -251,7 +414,9 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               ></textarea>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Description </label>
+              <label for="exampleFormControlTextarea1">
+                জায়গার বর্ণনা দিন{" "}
+              </label>
               <textarea
                 required
                 typeof="comment"
@@ -265,7 +430,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               ></textarea>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Hotel</label>
+              <label for="exampleFormControlTextarea1">হোটেলের তথ্য দিন </label>
               <textarea
                 required
                 typeof="comment"
@@ -279,7 +444,7 @@ const ReviewForm = ({ modalIsOpen, closeModal }) => {
               ></textarea>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Upload a image</label>
+              <label for="exampleFormControlTextarea1">ছবি যোগ করুন</label>
               <input
                 required
                 onChange={handleFileChange}

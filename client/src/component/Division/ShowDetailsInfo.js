@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import NavBar from "../Navbar/Navbar";
 import ReviewForm from "../ReviewForm/ReviewForm";
+import HalfRating from "../Shared/Ratings";
 import ShowReview from "../ShowReview/ShowReview";
 import "./ShowDetailsInfo.css";
 const ShowDetailsInfo = ({ placeData }) => {
@@ -62,8 +63,10 @@ const ShowDetailsInfo = ({ placeData }) => {
                     </Link>
                   </p>
                   <hr />
-                  <p></p>
-                  <p>রেটিং : {showk}</p>
+                  <div className="d-flex flex-direction-row">
+                    <HalfRating value={showk}></HalfRating>
+                    <strong className="px-3">{showk}</strong>
+                  </div>
                   <h5 className="text-right">{placeData.distNameBn}</h5>
                 </div>
               </div>

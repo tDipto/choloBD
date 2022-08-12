@@ -1,4 +1,5 @@
 import React from "react";
+import HalfRating from "../Shared/Ratings";
 import "./DesignReview.css";
 const DesignReview = ({ data }) => {
   return (
@@ -17,7 +18,8 @@ const DesignReview = ({ data }) => {
           <div class="card-body">
             <h5 class="card-title">নাম : {data.name}</h5>
             <h6 class="card-subtitle mb-2 text-muted">
-              রেটিং দিয়েছেন : {data.rating}
+              <HalfRating value={data.rating} />
+              <p className="py-2">রেটিং দিয়েছেন : {data.rating}</p>
             </h6>
             <p class="card-text">মন্তব্য : {data.comments}</p>
           </div>
