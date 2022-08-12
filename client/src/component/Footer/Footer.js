@@ -120,7 +120,7 @@ const Footer = () => {
               </a>
               <a className="m-1" href="https://www.facebook.com/RHN.RR">
                 <li className="list-group-item active">
-                  আবুবকর সিদ্দিক রায়হান
+                  আবু বক্কর ছিদিক রায়হান
                 </li>
               </a>
               <a
