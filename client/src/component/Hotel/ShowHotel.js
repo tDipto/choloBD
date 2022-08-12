@@ -19,11 +19,11 @@ const ShowHotel = ({ dataHotel }) => {
             </div> */}
 
             <div className="division-flex-items">
-              <img
+              {/* <img
                 src={pic}
                 alt="one"
                 style={{ height: "250px", width: "350px" }}
-              />
+              /> */}
               <div className="division-flex-text">
                 <div>
                   <h3>{name}</h3>
@@ -35,7 +35,7 @@ const ShowHotel = ({ dataHotel }) => {
                   <strong className="px-3">{rating}</strong>
                 </div>
                 <br />
-                <button type="button" class="btn btn-danger btn-lg ">
+                <button type="button" class="btn btn-lg ">
                   <a href={bookLink}>Book Now</a>
                 </button>
               </div>
