@@ -6,12 +6,12 @@ const DivisionDataShow = ({ data }) => {
 
   const {
     placeName,
-    distName,
+
     divName,
-    roadmap,
+
     placeNameEn,
     distNameBn,
-    hotel,
+
     placeDesc,
     pic,
   } = data;
