@@ -104,7 +104,7 @@ const Navbar = () => {
             class=" btn text-dark"
             onClick={openModal}
           >
-            <strong style={{ fontSize: "18px", color: "blue" }}>
+            <strong style={{ fontSize: "18px", color: "green" }}>
               যোগ করুন
             </strong>
           </button>
