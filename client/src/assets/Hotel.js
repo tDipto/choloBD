@@ -82,6 +82,132 @@ export const CollectionHotel = [
   },
 
   {
+    id: "6",
+    distNameBn: "কক্সবাজার",
+    hotels: [
+      {
+        name: "Long Beach Hotel",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "14 Kalatoli Road, Hotel-Motel Zone, Cox's Bazar 4700 Bangladesh",
+        rating: "4.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667467-d1882664-Reviews-Long_Beach_Hotel-Cox_s_Bazar_Chittagong_Division.html",
+      },
+      {
+        name: "Sea Pearl Beach Resort & Spa Cox's Bazar",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Jaliapalong, Inani, Ukhia, Cox's Bazar 4750 Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667467-d8092586-Reviews-Sea_Pearl_Beach_Resort_Spa_Cox_s_Bazar-Cox_s_Bazar_Chittagong_Division.html",
+      },
+      {
+        name: "Hotel Sea Crown",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Marin Drive Kolatali New Beach, Kola Toli, Cox's Bazar Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667467-d1642597-Reviews-Hotel_Sea_Crown-Cox_s_Bazar_Chittagong_Division.html",
+      },
+      {
+        name: "Mermaid Eco Resort",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Pechardwip, Marine Drive Road Ramu, Cox's Bazar 4730 Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667467-d1574180-Reviews-Mermaid_Eco_Resort-Cox_s_Bazar_Chittagong_Division.html",
+      },
+    ],
+  },
+  {
+    id: "6",
+    distNameBn: "চট্টগ্রাম",
+    hotels: [
+      {
+        name: "Hotel Agrabad",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Sabder Ali Road Agrabad Commercial Area, Chittagong City 4000 Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g319837-d1400680-Reviews-Hotel_Agrabad-Chittagong_City_Chittagong_Division.html",
+      },
+      {
+        name: "Well Park Residence Boutique Hotel",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Road # 01, Plot # 02, O.R. Nizam Road Chittagong Chittagong",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g319837-d2098039-Reviews-Well_Park_Residence_Boutique_Hotel-Chittagong_City_Chittagong_Division.html",
+      },
+      {
+        name: "Grand Park Hotel",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Avenue Centre, 787 CDA Avenue, East Nasirabad, Chittagong City Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g319837-d1740167-Reviews-Grand_Park_Hotel-Chittagong_City_Chittagong_Division.html",
+      },
+    ],
+  },
+  {
+    id: "6",
+    distNameBn: "রাঙ্গামাটি",
+    hotels: [
+      {
+        name: "Rangamati Water Front Resort",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "113 Kazi Nazrul Islam Avenue, Dhaka City 1000 Bangladesh",
+        rating: "4.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g293936-d4500593-Reviews-Rangamati_Water_Front_Resort-Dhaka_City_Dhaka_Division.html",
+      },
+      {
+        name: "Hotel Nadisa International",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "New Bus Station, Reserve Bazar, Rangamati Bangladesh",
+        rating: "5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g2398418-d8663062-Reviews-Hotel_Nadisa_International-Rangamati_Chittagong_Division.html",
+      },
+    ],
+  },
+  {
+    id: "6",
+    distNameBn: "খাগড়াছড়ি",
+    hotels: [
+      {
+        name: "Sajek Resort",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Sajek Bangladesh",
+        rating: "4.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g13326420-d12202510-Reviews-Sajek_Resort-Sajek_Chittagong_Division.html",
+      },
+      {
+        name: "Hotel Maitree, Sajek Valley",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Dighinala - Sajek Road, Sajek 8000 Bangladesh",
+        rating: "3",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g13326420-d13324137-Reviews-Hotel_Maitree_Sajek_Valley-Sajek_Chittagong_Division.html",
+      },
+      {
+        name: "Megh Kabbo Hilltop Cottage",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Ruiluipara Tourist Zone, Sazek Valley, Baghaichari Rangamati, Rangamati Bangladesh",
+        rating: "4.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g2398418-d13913289-Reviews-Megh_Kabbo_Hilltop_Cottage-Rangamati_Chittagong_Division.html",
+      },
+    ],
+  },
+  {
     id: "5",
     distNameBn: "ঢাকা",
     hotels: [
