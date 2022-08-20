@@ -21,7 +21,7 @@ const DesignReview = ({ data }) => {
               <HalfRating value={data.rating} />
               <p className="py-2">রেটিং দিয়েছেন : {data.rating}</p>
             </h6>
-            <p class="card-text">মন্তব্য : {data.comments}</p>
+            <p class="card-text overflow-auto">মন্তব্য : {data.comments}</p>
           </div>
         </div>
       </div>

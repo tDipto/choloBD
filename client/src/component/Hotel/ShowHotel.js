@@ -1,6 +1,7 @@
 import React from "react";
 import "../Division/DivisionDataShow.css";
 import HalfRating from "../Shared/Ratings";
+import "./ShowHotel.css";
 const ShowHotel = ({ dataHotel }) => {
   return (
     <>
@@ -9,22 +10,13 @@ const ShowHotel = ({ dataHotel }) => {
         console.log(data);
         return (
           <>
-            {/* <div>
-              <h1>{data.name}</h1>
-              <h1>{data.address}</h1>
-              <p>Rating {data.rating}</p>
-              <button>
-                <a href={data.bookLink}>Book</a>
-              </button>
-            </div> */}
-
-            <div className="division-flex-items">
+            <div className="hotel-flex-items">
               {/* <img
                 src={pic}
                 alt="one"
                 style={{ height: "250px", width: "350px" }}
               /> */}
-              <div className="division-flex-text">
+              <div className="hotel-flex-text">
                 <div>
                   <h3>{name}</h3>
                 </div>
@@ -35,6 +27,7 @@ const ShowHotel = ({ dataHotel }) => {
                   <strong className="px-3">{rating}</strong>
                 </div>
                 <br />
+
                 <button type="button" class="btn btn-lg ">
                   <a href={bookLink}>Book Now</a>
                 </button>

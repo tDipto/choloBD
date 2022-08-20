@@ -1,0 +1,28 @@
+.hotel-flex-items > img {
+  max-width: 400px;
+  height: auto;
+}
+.hotel-flex-items {
+  min-width: 400px;
+  min-height: 300px;
+  position: relative;
+}
+
+.hotel-flex-text {
+  max-width: fit-content;
+
+  text-align: left;
+  padding: 1em;
+}
+.hotel-flex-text > button {
+  position: absolute;
+  bottom: 5px;
+}
+
+.hotel-flex-items {
+  background-color: #ebebeb;
+  /* background-color: #4c4c4c; */
+  margin: 10px;
+  border-bottom: 5px #4c4c4c solid;
+  border-radius: 10px;
+}
