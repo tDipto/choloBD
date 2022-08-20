@@ -437,4 +437,221 @@ export const CollectionHotel = [
       },
     ],
   },
+  {
+    id: "8",
+    distNameBn: "কিশোরগঞ্জ",
+    hotels: [
+      {
+        name: "Jalalpur Eco Resort",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Jalalpur Road Near Jalalpur High School, Jalalpur Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g15585204-d15582523-Reviews-Jalalpur_Eco_Resort-Jalalpur_Dhaka_Division.html",
+      },
+      {
+        name: "TaabuTour",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Dhaka City, Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Attraction_Review-g293936-d14173352-Reviews-TaabuTour-Dhaka_City_Dhaka_Division.html",
+      },
+    ],
+  },
+  {
+    id: "8",
+    distNameBn: "গাজীপুর",
+    hotels: [
+      {
+        name: "Kaalmegha Country Club & Resort",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Talepabad, Kalmegha, Gazipur 1950 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g790459-d23267955-Reviews-Kaalmegha_Country_Club_Resort-Gazipur_Dhaka_Division.html",
+      },
+      {
+        name: "Sarah Resort",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Malipara - Digirchala Rd, Gazipur 1700 Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g790459-d15307573-Reviews-Sarah_Resort-Gazipur_Dhaka_Division.html",
+      },
+    ],
+  },
+  {
+    id: "8",
+    distNameBn: "টাঙ্গাইল",
+    hotels: [
+      {
+        name: "Ascott The Residence",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "# 8 House# 13 Road Block K, Dhaka, Dhaka City 1212 Bangladesh",
+        rating: "4.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g293936-d1812511-Reviews-Ascott_The_Residence-Dhaka_City_Dhaka_Division.html",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "কুষ্টিয়া",
+    hotels: [
+      {
+        name: "Hotel Noor International Kushtia",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Upazila More, Beside Rifels Club. Kushtia-jhinaidah Highway Rajdhani Complex, Kushtia 7000 Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g3198095-d21227205-Reviews-Hotel_Noor_International_Kushtia-Kushtia_Khulna_Division.html",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "বাগেরহাট",
+    hotels: [
+      {
+        name: "Viator Guesthouse",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Road 7A House 60 Block H Banani, 1213 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667479-d1462001-Reviews-Viator_Guesthouse-Dhaka_Division.html",
+      },
+      {
+        name: "Hotel Noor International Kushtia",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Upazila More, Beside Rifels Club. Kushtia-jhinaidah Highway Rajdhani Complex, Kushtia 7000 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g3198095-d21227205-Reviews-Hotel_Noor_International_Kushtia-Kushtia_Khulna_Division.html",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "মাগুরা",
+    hotels: [
+      {
+        name: "City Inn",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "B-1 Mojid Sarrony, KDA, Khulna City 9100 Bangladesh",
+        rating: "3.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667472-d3194093-Reviews-City_Inn-Khulna_City_Khulna_Division.html",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "খুলনা",
+    hotels: [
+      {
+        name: "City Inn",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "B-1 Mojid Sarrony, KDA, Khulna City 9100 Bangladesh",
+        rating: "3.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667472-d3194093-Reviews-City_Inn-Khulna_City_Khulna_Division.html",
+      },
+      {
+        name: "Tiger Garden International Hotel, Khulna Bangladesh",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "1 KDA Avenue Shib Bari More, Khulna City 9100 Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667472-d3218407-Reviews-Tiger_Garden_International_Hotel_Khulna_Bangladesh-Khulna_City_Khulna_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "বরগুনা",
+    hotels: [
+      {
+        name: "Hotel Grand Park",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Band Road Bangabandhu Udyan, Bell’s Park, Barisal City 8200 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "tripadvisor.com/Hotel_Review-g667461-d8816252-Reviews-Hotel_Grand_Park-Barisal_City_Barisal_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "পিরোজপুর",
+    hotels: [
+      {
+        name: "Hotel Grand Park",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Band Road Bangabandhu Udyan, Bell’s Park, Barisal City 8200 Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667461-d8816252-Reviews-Hotel_Grand_Park-Barisal_City_Barisal_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "বরিশাল",
+    hotels: [
+      {
+        name: "Hotel Grand Park",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Band Road Bangabandhu Udyan, Bell’s Park, Barisal City 8200 Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667461-d8816252-Reviews-Hotel_Grand_Park-Barisal_City_Barisal_Division.html",
+      },
+      {
+        name: "Hotel Sedona International",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "88 Sadar Road, Barisal City 8200 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667461-d9558904-Reviews-Hotel_Sedona_International-Barisal_City_Barisal_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "পটুয়াখালি",
+    hotels: [
+      {
+        name: "Khan Palace",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Barisal - Patuakhali Road, Kuakata 8652 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g11801518-d13812101-Reviews-Khan_Palace-Kuakata_Barisal_Division.html",
+      },
+      {
+        name: "Hotel Graver Inn International",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "East Side of Rakhain Mohila Market, Kuakata 8600 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g11801518-d12580122-Reviews-Hotel_Graver_Inn_International-Kuakata_Barisal_Division.html",
+      },
+    ],
+  },
 ];
