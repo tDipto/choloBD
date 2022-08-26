@@ -68,7 +68,8 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to="/" class="nav-item">
-              <a class="nav-link" href="#">
+              <a style= {{paddingTop:"12px",color:"green"}}
+              class="nav-link" href="#">
                 হোম
               </a>
             </NavLink>
@@ -76,6 +77,7 @@ const Navbar = () => {
 
           <li class="nav-item dropdown">
             <a
+              style= {{paddingTop:"12px",color:"green"}}
               class="nav-link dropdown-toggle"
               href="#"
               id="navbarDropdown"
@@ -118,7 +120,7 @@ const Navbar = () => {
           <input
             class="form-control mr-sm-2"
             type="search"
-            placeholder="জায়গার নাম লিখুন!"
+            placeholder="জেলার নাম লিখুন!"
             aria-label="Search"
             onChange={(e) => setSearch(e.target.value)}
             value={search}
