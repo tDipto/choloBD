@@ -306,7 +306,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "চাঁপাইনবাবগঞ্জ ",
+    distNameBn: "চাঁপাইনবাবগঞ্জ",
     hotels: [
       {
         name: "Hotel Naz GardenHotel Star International",
@@ -329,7 +329,7 @@ export const CollectionHotel = [
 
   {
     id: "7",
-    distNameBn: "নওগাঁ ",
+    distNameBn: "নওগাঁ",
     hotels: [
       {
         name: "Mollika Inn",
@@ -344,7 +344,7 @@ export const CollectionHotel = [
 
   {
     id: "7",
-    distNameBn: "নাটোর ",
+    distNameBn: "নাটোর",
     hotels: [
       {
         name: "Hotel Red Castle",
@@ -371,7 +371,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "জয়পুরহাট ",
+    distNameBn: "জয়পুরহাট",
     hotels: [
       {
         name: "Jalaluddin Tower",
@@ -384,7 +384,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "রংপুর ",
+    distNameBn: "রংপুর",
     hotels: [
       {
         name: "Little Rangpur Inn",
@@ -407,7 +407,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "দিনাজপুর ",
+    distNameBn: "দিনাজপুর",
     hotels: [
       {
         name: "Happy Tree",
@@ -429,7 +429,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "নীলফামারী ",
+    distNameBn: "নীলফামারী",
     hotels: [
       {
         name: "Eque Heritage Hotel & Resort",
@@ -467,10 +467,10 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "কুড়িগ্রাম ",
+    distNameBn: "কুড়িগ্রাম",
     hotels: [
       {
-        name: "Grand Palace Hotel & Resort ",
+        name: "Grand Palace Hotel & Resort",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
         address: "40 km. SW from Kurīgrām District",
         rating: "4.0",
@@ -480,7 +480,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "পঞ্চগড় ",
+    distNameBn: "পঞ্চগড়",
     hotels: [
       {
         name: "GD HOTEL NJP ",
@@ -493,7 +493,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "লালমনিরহাট ",
+    distNameBn: "লালমনিরহাট",
     hotels: [
       {
         name: "Little Rangpur Inn ",
@@ -507,7 +507,7 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "গাইবান্ধা ",
+    distNameBn: "গাইবান্ধা",
     hotels: [
       {
         name: "Sks Inn ",
