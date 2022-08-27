@@ -200,7 +200,7 @@ export const divisions = [
         disImg: require("../Public/zillaImg/chittagongImg/coxsbazar.jpg"),
       },
       /* { id: 502, distName: "noakhali", distDName: "নোয়াখালী" }, */
-      /* {
+      {
         id: 503,
         distName: "feni",
         distDName: "ফেনী",
@@ -217,7 +217,7 @@ export const divisions = [
         distName: "brahmanbaria",
         distDName: "ব্রাহ্মণবাড়িয়া",
         disImg: require("../Public/zillaImg/chittagongImg/brahmanbaria.jpg"),
-      }, */
+      },
       {
         id: 506,
         distName: "bandarban",
