@@ -535,7 +535,7 @@ export const CollectionHotel = [
   },
   {
     id: "9",
-    distNameBn: "জামালপুর ",
+    distNameBn: "জামালপুর",
     hotels: [
       {
         name: "Hotel Rowshon Int.",
@@ -548,7 +548,7 @@ export const CollectionHotel = [
   },
   {
     id: "9",
-    distNameBn: "শেরপুর ",
+    distNameBn: "শেরপুর",
     hotels: [
       {
         name: "Hotel Grand Safeer",
@@ -562,7 +562,7 @@ export const CollectionHotel = [
   },
   {
     id: "9",
-    distNameBn: "নেত্রকোনা ",
+    distNameBn: "নেত্রকোনা",
     hotels: [
       {
         name: "Hotel Al Nur",
