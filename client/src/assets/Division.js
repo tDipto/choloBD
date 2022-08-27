@@ -142,7 +142,7 @@ export const divisions = [
       {
         id: 305,
         distName: "pirojpur",
-        distDName: "ফিরোজপুর",
+        distDName: "পিরোজপুর",
         disImg: require("../Public/zillaImg/barisalImg/pirojpur.jpeg"),
       },
       {

@@ -326,6 +326,62 @@ export const CollectionHotel = [
       },
     ],
   },
+
+  {
+    id: "7",
+    distNameBn: "নওগাঁ ",
+    hotels: [
+      {
+        name: "Mollika Inn",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Dogachi, Boalia, Naogaon 6500 Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g11879478-d13498071-Reviews-Mollika_Inn-Naogaon_Rajshahi_Division.html",
+      },
+    ],
+  },
+
+  {
+    id: "7",
+    distNameBn: "নাটোর ",
+    hotels: [
+      {
+        name: "Hotel Red Castle",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Natore Road, Rajshahi City Bangladesh",
+        rating: "4.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667998-d8422747-Reviews-Hotel_Red_Castle-Rajshahi_City_Rajshahi_Division.html",
+      },
+    ],
+  },
+  {
+    id: "7",
+    distNameBn: "সিরাজগঞ্জ",
+    hotels: [
+      {
+        name: "Paharika Hotel and Gust House",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Dhaka Road, Sirajganj City Bangladesh",
+        rating: "4.5",
+        bookLink: "https://hotelandplace.com/hotel/paharika-and-gust-house",
+      },
+    ],
+  },
+  {
+    id: "7",
+    distNameBn: "জয়পুরহাট ",
+    hotels: [
+      {
+        name: "Jalaluddin Tower",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Dhaka-Joypurhat Road, Joypurhat City Bangladesh",
+        rating: "4.3",
+        bookLink: "https://hotelandplace.com/hotel/jalaluddin-tower",
+      },
+    ],
+  },
   {
     id: "7",
     distNameBn: "রংপুর ",
@@ -351,20 +407,6 @@ export const CollectionHotel = [
   },
   {
     id: "7",
-    distNameBn: "নওগাঁ ",
-    hotels: [
-      {
-        name: "Mollika Inn",
-        // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address: "Dogachi, Boalia, Naogaon 6500 Bangladesh",
-        rating: "4.0",
-        bookLink:
-          "https://www.tripadvisor.com/Hotel_Review-g11879478-d13498071-Reviews-Mollika_Inn-Naogaon_Rajshahi_Division.html",
-      },
-    ],
-  },
-  {
-    id: "7",
     distNameBn: "দিনাজপুর ",
     hotels: [
       {
@@ -382,20 +424,6 @@ export const CollectionHotel = [
         rating: "3.5",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g2214143-d8814163-Reviews-Hotel_Mrigoya_Premium-Dinajpur_Rajshahi_Division.html",
-      },
-    ],
-  },
-  {
-    id: "7",
-    distNameBn: "নাটোর ",
-    hotels: [
-      {
-        name: "Hotel Red Castle",
-        // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address: "Natore Road, Rajshahi City Bangladesh",
-        rating: "4.0",
-        bookLink:
-          "https://www.tripadvisor.com/Hotel_Review-g667998-d8422747-Reviews-Hotel_Red_Castle-Rajshahi_City_Rajshahi_Division.html",
       },
     ],
   },
@@ -438,14 +466,123 @@ export const CollectionHotel = [
     ],
   },
   {
+    id: "7",
+    distNameBn: "কুড়িগ্রাম ",
+    hotels: [
+      {
+        name: "Grand Palace Hotel & Resort ",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "40 km. SW from Kurīgrām District",
+        rating: "4.0",
+        bookLink: "https://hotelandplace.com/hotel/grand-palace-amp-resort",
+      },
+    ],
+  },
+  {
+    id: "7",
+    distNameBn: "পঞ্চগড় ",
+    hotels: [
+      {
+        name: "GD HOTEL NJP ",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "27 km. NE from Panchāgarh District",
+        rating: "4.0",
+        bookLink: "https://hotelandplace.com/hotel/gd-njp-siliguri",
+      },
+    ],
+  },
+  {
+    id: "7",
+    distNameBn: "লালমনিরহাট ",
+    hotels: [
+      {
+        name: "Little Rangpur Inn ",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Kotwali Thana Road 2 MulatoleRangpur, 28 km. SW from Lālmonirhāt District",
+        rating: "4.0",
+        bookLink: "https://hotelandplace.com/hotel/little-rangpur-inn",
+      },
+    ],
+  },
+  {
+    id: "7",
+    distNameBn: "গাইবান্ধা ",
+    hotels: [
+      {
+        name: "Sks Inn ",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "College Road, Radhakrisnopur, Gaibandha 5700",
+        rating: "4.0",
+        bookLink:
+          "https://www.kayak.com/hotels/Sks-Inn,Gaibandha-c113399-h3712035-details/2022-08-28/2022-08-29/2adults?sid=MBEkPTZImA#overview",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "ময়মনসিংহ",
+    hotels: [
+      {
+        name: "Hotel Amir International",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "46/A, Palika Shopping Centre, Station Road, Mymensingh 2200",
+        rating: "4",
+        bookLink:
+          "https://www.google.com/travel/hotels/Mymensingh/entity/CgsI16-K_N_c4JzBARAB?q=mymensingh%20hotels&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4814050%2C4816977%2C4826689%2C4828448%2C4829505&hl=en-BD&gl=bd&ssta=1&ts=CAESABogCgIaABIaEhQKBwjmDxAIGBsSBwjmDxAIGBwYATICEAAqBAoAGgA&rp=ENevivzf3OCcwQEQ4YDQ5tz-jbXXARD69qz08OOnhNoBEMWBqsDtmpf-YjgBQABIAqIBCk15bWVuc2luZ2jAAQM&ap=aAE&ictx=1&ved=0CAAQ5JsGahcKEwjAsqOXmub5AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "জামালপুর ",
+    hotels: [
+      {
+        name: "Hotel Rowshon Int.",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Rowshon Ara Complex Medical Road Tomaltola, 2000",
+        rating: "4",
+        bookLink: "shorturl.at/hikLQ",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "শেরপুর ",
+    hotels: [
+      {
+        name: "Hotel Grand Safeer",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Rahima plaza, Tomaltola, 2000",
+        rating: "4",
+        bookLink:
+          "https://www.google.com/travel/hotels/Sherpur/entity/CgsIlYP96u3k0tHXARAB?q=hotel%20in%20sherpur%20bangladesh&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4814050%2C4816977%2C4826689%2C4828448%2C4829505&hl=en-BD&gl=bd&ssta=1&ts=CAESABogCgIaABIaEhQKBwjmDxAIGBsSBwjmDxAIGBwYATICEAAqCQoFOgNCRFQaAA&rp=ELPnwsLjpqW3jAEQvaWEw4L-rub5ARDDjZSUq9W_stkBEJWD_ert5NLR1wE4AUAASAKiAQdTaGVycHVywAED&ap=aAE&ictx=1&ved=0CAAQ5JsGahcKEwiowNLUnOb5AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls",
+      },
+    ],
+  },
+  {
+    id: "9",
+    distNameBn: "নেত্রকোনা ",
+    hotels: [
+      {
+        name: "Hotel Al Nur",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          " Choto Bazar, Netrokona., Mymensingh – Sunamganj Rd, Netrokon",
+        rating: "4",
+        bookLink: "http://www.parjatanbd.com/dynamic/room_details.php?id=1198",
+      },
+    ],
+  },
+
+  {
     id: "8",
     distNameBn: "কিশোরগঞ্জ",
     hotels: [
       {
         name: "Jalalpur Eco Resort",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "Jalalpur Road Near Jalalpur High School, Jalalpur Bangladesh",
+        address: "Jalalpur Road Near Jalalpur High School, Jalalpur Bangladesh",
         rating: "5.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g15585204-d15582523-Reviews-Jalalpur_Eco_Resort-Jalalpur_Dhaka_Division.html",
@@ -467,8 +604,7 @@ export const CollectionHotel = [
       {
         name: "Kaalmegha Country Club & Resort",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "Talepabad, Kalmegha, Gazipur 1950 Bangladesh",
+        address: "Talepabad, Kalmegha, Gazipur 1950 Bangladesh",
         rating: "5.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g790459-d23267955-Reviews-Kaalmegha_Country_Club_Resort-Gazipur_Dhaka_Division.html",
@@ -520,8 +656,7 @@ export const CollectionHotel = [
       {
         name: "Viator Guesthouse",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "Road 7A House 60 Block H Banani, 1213 Bangladesh",
+        address: "Road 7A House 60 Block H Banani, 1213 Bangladesh",
         rating: "5.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g667479-d1462001-Reviews-Viator_Guesthouse-Dhaka_Division.html",
@@ -544,8 +679,7 @@ export const CollectionHotel = [
       {
         name: "City Inn",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "B-1 Mojid Sarrony, KDA, Khulna City 9100 Bangladesh",
+        address: "B-1 Mojid Sarrony, KDA, Khulna City 9100 Bangladesh",
         rating: "3.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g667472-d3194093-Reviews-City_Inn-Khulna_City_Khulna_Division.html",
@@ -559,8 +693,7 @@ export const CollectionHotel = [
       {
         name: "City Inn",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "B-1 Mojid Sarrony, KDA, Khulna City 9100 Bangladesh",
+        address: "B-1 Mojid Sarrony, KDA, Khulna City 9100 Bangladesh",
         rating: "3.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g667472-d3194093-Reviews-City_Inn-Khulna_City_Khulna_Division.html",
@@ -568,8 +701,7 @@ export const CollectionHotel = [
       {
         name: "Tiger Garden International Hotel, Khulna Bangladesh",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "1 KDA Avenue Shib Bari More, Khulna City 9100 Bangladesh",
+        address: "1 KDA Avenue Shib Bari More, Khulna City 9100 Bangladesh",
         rating: "4.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g667472-d3218407-Reviews-Tiger_Garden_International_Hotel_Khulna_Bangladesh-Khulna_City_Khulna_Division.html",
@@ -622,8 +754,7 @@ export const CollectionHotel = [
       {
         name: "Hotel Sedona International",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "88 Sadar Road, Barisal City 8200 Bangladesh",
+        address: "88 Sadar Road, Barisal City 8200 Bangladesh",
         rating: "5.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g667461-d9558904-Reviews-Hotel_Sedona_International-Barisal_City_Barisal_Division.html",
@@ -637,8 +768,7 @@ export const CollectionHotel = [
       {
         name: "Khan Palace",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "Barisal - Patuakhali Road, Kuakata 8652 Bangladesh",
+        address: "Barisal - Patuakhali Road, Kuakata 8652 Bangladesh",
         rating: "5.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g11801518-d13812101-Reviews-Khan_Palace-Kuakata_Barisal_Division.html",
@@ -646,8 +776,7 @@ export const CollectionHotel = [
       {
         name: "Hotel Graver Inn International",
         // pic: require("./hotelPic/hotel-grand-park.jpg"),
-        address:
-          "East Side of Rakhain Mohila Market, Kuakata 8600 Bangladesh",
+        address: "East Side of Rakhain Mohila Market, Kuakata 8600 Bangladesh",
         rating: "5.0",
         bookLink:
           "https://www.tripadvisor.com/Hotel_Review-g11801518-d12580122-Reviews-Hotel_Graver_Inn_International-Kuakata_Barisal_Division.html",
