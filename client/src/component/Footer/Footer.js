@@ -79,7 +79,7 @@ const Footer = () => {
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                placeholder="name"
+                placeholder="Name"
               />
             </div>
             <div class="form-group">
