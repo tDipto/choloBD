@@ -763,6 +763,20 @@ export const CollectionHotel = [
   },
   {
     id: "10",
+    distNameBn: "ঝালকাঠি",
+    hotels: [
+      {
+        name: "Rose Inn Hotel & Restaurant",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Jhalkhati Sadar 2300",
+        rating: "4.0",
+        bookLink:
+          "https://www.google.com/travel/hotels/Jhalokati/entity/CgoI-ZHjqeaT_7o2EAE?q=jhalokati%20hotels&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4814050%2C4816977%2C4826689%2C4828448%2C4829505&hl=en-BD&gl=bd&ssta=1&ts=CAESABogCgIaABIaEhQKBwjmDxAIGBsSBwjmDxAIGBwYATICEAAqBAoAGgA&rp=EPmR46nmk_-6NhCHrsPp6eO2u2MQzbuDndLJ_pVOEIegppbcsPqtITgBQABIAqIBCUpoYWxva2F0acABAw&ap=aAE&ictx=1&ved=0CAAQ5JsGahcKEwjYhp-P1ub5AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls",
+      },
+    ],
+  },
+  {
+    id: "10",
     distNameBn: "পটুয়াখালি",
     hotels: [
       {
@@ -783,6 +797,21 @@ export const CollectionHotel = [
       },
     ],
   },
+  {
+    id: "10",
+    distNameBn: "ভোলা",
+    hotels: [
+      {
+        name: "Hotel Bay Island",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Sadar Road, Bhola 8300 Bangladesh",
+        rating: "5.0",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667463-d15615137-Reviews-Hotel_Bay_Island-Bhola_Barisal_Division.html",
+      },
+    ],
+  },
+
   {
     id: "10",
     distNameBn: "বান্দরবান",
