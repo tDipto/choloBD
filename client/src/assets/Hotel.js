@@ -783,4 +783,83 @@ export const CollectionHotel = [
       },
     ],
   },
+  {
+    id: "10",
+    distNameBn: "বান্দরবান",
+    hotels: [
+      {
+        name: "Hotel Green Land",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Chimbuk Road Next to Head Post Office, Bandarban 4600 Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g2368232-d4171772-Reviews-Hotel_Green_Land-Bandarban_Chittagong_Division.html",
+      },
+      {
+        name: "Hotel Plaza Bandarban",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Ward No.7, Army Para, Bandarban Bangladesh",
+        rating: "3.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g2368232-d6363094-Reviews-Hotel_Plaza_Bandarban-Bandarban_Chittagong_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "ফরিদপুর",
+    hotels: [
+      {
+        name: "Hotel Jhil View",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Thana Rd, Faridpur 7800, Bangladesh",
+        rating: "3",
+        bookLink: "https://bd.nusalist.com/place/hotel-jhil-view",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "নওগাঁ",
+    hotels: [
+      {
+        name: "Hotel Naz Garden",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Bogra By-Pass Highway Silimpur, Bogra 5800 Bangladesh",
+        rating: "3.5",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667465-d945722-Reviews-Hotel_Naz_Garden-Bogra_Rajshahi_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "নাটোর",
+    hotels: [
+      {
+        name: "Hotel Star International",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address: "Aamchattar, Bypass Road, Rajshahi City 6203 Bangladesh",
+        rating: "4",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g667998-d12216895-Reviews-Hotel_Star_International-Rajshahi_City_Rajshahi_Division.html",
+      },
+    ],
+  },
+  {
+    id: "10",
+    distNameBn: "চাপাইনবাবগঞ্জ",
+    hotels: [
+      {
+        name: "Sky View Inn",
+        // pic: require("./hotelPic/hotel-grand-park.jpg"),
+        address:
+          "Boro Indara Rd, Holding No-07,Ward No-02,Kathal Bagicha, Boro-Indara More, Nawabganj 6803 Bangladesh",
+        rating: "2",
+        bookLink:
+          "https://www.tripadvisor.com/Hotel_Review-g14236498-d13992101-Reviews-Sky_View_Inn-Nawabganj_Rajshahi_Division.html",
+      },
+    ],
+  },
 ];
