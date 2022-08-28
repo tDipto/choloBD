@@ -136,7 +136,7 @@ export const divisions = [
       {
         id: 304,
         distName: "patuakhali",
-        distDName: "পাটুয়াখালি",
+        distDName: "পটুয়াখালি",
         disImg: require("../Public/zillaImg/barisalImg/patuakhali.jpeg"),
       },
       {

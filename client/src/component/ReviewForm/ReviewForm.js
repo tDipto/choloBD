@@ -55,7 +55,7 @@ const ReviewForm = ({ placeNameBn, placeNameEn }) => {
                 class="form-control"
                 id="exampleInputEmail1"
                 value={name}
-                placeholder="বাংলায় লিখুন"
+                placeholder="নাম লিখুন"
                 required
                 aria-describedby="emailHelp"
               />
@@ -88,7 +88,7 @@ const ReviewForm = ({ placeNameBn, placeNameEn }) => {
                 id="exampleFormControlTextarea1"
                 rows="3"
                 name="comment"
-                placeholder="বাংলায় লিখুন"
+                placeholder="মন্তব্য লিখুন"
                 value={comments}
               ></textarea>
             </div>

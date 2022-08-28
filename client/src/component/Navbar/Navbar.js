@@ -124,6 +124,7 @@ const Navbar = () => {
             aria-label="Search"
             onChange={(e) => setSearch(e.target.value)}
             value={search}
+            required 
           />
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
             {/* <Link to={"/search/" + { search }}> */}খুঁজুন{/* </Link> */}
